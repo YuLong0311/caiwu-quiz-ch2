@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>《财务管理（第5版）》第2章 2.1—2.3 在线练习</title>
+<meta name="description" content="财务管理（第5版）第2章 财务管理基本价值观念 2.1—2.3 三套卷 48 题在线练习，含答案与解析。">
+<style>
+/* ==========================================================================
+   《财务管理（第5版）》第 2 章 2.1—2.3 在线练习
+   纯静态样式：无外部字体、无 CDN、无框架
+   ========================================================================== */
+
+:root {
+  --brand: #1F3864;
+  --brand-2: #2C4B7E;
+  --brand-soft: #E8EEF8;
+  --accent: #B58A2E;
+
+  --ink: #1B2233;
+  --ink-2: #3C475C;
+  --muted: #6B7688;
+  --line: #E1E6EF;
+  --line-2: #EDF0F6;
+
+  --bg: #F4F6FA;
+  --bg-2: #EAEEF6;
+  --card: #FFFFFF;
+  --card-2: #FBFCFE;
+
+  --green: #17724A;
+  --green-bg: #E5F5EC;
+  --red: #B3261E;
+  --red-bg: #FCEBE9;
+  --amber: #8A5A00;
+  --amber-bg: #FFF3D2;
+
+  --shadow: 0 1px 2px rgba(23, 34, 56, .05), 0 6px 20px rgba(23, 34, 56, .06);
+  --shadow-sm: 0 1px 2px rgba(23, 34, 56, .06);
+  --radius: 14px;
+  --radius-sm: 9px;
+
+  --serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "SimSun", "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, "Courier New", monospace;
+}
+
+[data-theme="dark"] {
+  --brand: #8FA9D9;
+  --brand-2: #A9BFE4;
+  --brand-soft: #1D2942;
+  --accent: #D8B265;
+
+  --ink: #E7EBF4;
+  --ink-2: #C2CADA;
+  --muted: #93A0B5;
+  --line: #2B3549;
+  --line-2: #232C3D;
+
+  --bg: #121826;
+  --bg-2: #18202F;
+  --card: #1A2233;
+  --card-2: #1E2739;
+
+  --green: #63C996;
+  --green-bg: #16301F;
+  --red: #F08A80;
+  --red-bg: #351B1A;
+  --amber: #E5BE63;
+  --amber-bg: #33280F;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .28);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  padding-bottom: 92px;
+}
+
+h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: .01em; }
+p { margin: 0; }
+
+button { font-family: inherit; }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--brand); color: #fff; padding: 10px 16px; border-radius: 0 0 8px 0;
+}
+.skip:focus { left: 0; }
+
+/* ---------- 页头 ---------- */
+.masthead {
+  background: linear-gradient(160deg, #1F3864 0%, #16294B 100%);
+  color: #fff;
+  border-bottom: 4px solid var(--accent);
+}
+[data-theme="dark"] .masthead {
+  background: linear-gradient(160deg, #1A2438 0%, #141C2E 100%);
+}
+.masthead-inner {
+  max-width: 1040px; margin: 0 auto;
+  padding: 26px 24px 22px;
+  display: flex; gap: 24px; align-items: flex-start; justify-content: space-between;
+}
+.brand { min-width: 0; }
+.eyebrow {
+  font-size: 12px; letter-spacing: .16em; color: rgba(255, 255, 255, .62);
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.masthead h1 {
+  font-family: var(--serif);
+  font-size: clamp(19px, 2.6vw, 27px);
+  line-height: 1.45; font-weight: 700;
+}
+.subtitle {
+  margin-top: 8px; font-size: 13.5px; color: rgba(255, 255, 255, .74); letter-spacing: .02em;
+}
+.subtitle strong { color: #fff; font-weight: 600; }
+
+.masthead-side { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; flex: none; }
+.timer {
+  display: flex; flex-direction: column; align-items: flex-end;
+  padding: 8px 14px; border-radius: 10px;
+  background: rgba(255, 255, 255, .09);
+  border: 1px solid rgba(255, 255, 255, .16);
+  min-width: 116px;
+}
+.timer-label { font-size: 11px; letter-spacing: .14em; color: rgba(255, 255, 255, .6); }
+.timer-value {
+  font-family: var(--mono); font-size: 24px; line-height: 1.15; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.timer.is-paused .timer-value { opacity: .55; }
+.timer.is-critical .timer-value { color: #FFC2B8; }
+.timer-actions { display: flex; gap: 8px; }
+
+/* ---------- 控制条 ---------- */
+.controlbar {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 30;
+  box-shadow: var(--shadow-sm);
+}
+.controlbar-inner {
+  max-width: 1040px; margin: 0 auto; padding: 11px 24px;
+  display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center;
+}
+.control-group { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.control-group.grow { margin-left: auto; }
+.control-label {
+  font-size: 12px; letter-spacing: .1em; color: var(--muted); white-space: nowrap;
+}
+.segmented {
+  display: inline-flex; padding: 3px; gap: 2px;
+  background: var(--bg-2); border-radius: 999px; border: 1px solid var(--line-2);
+  flex-wrap: wrap;
+}
+.seg-btn {
+  border: 0; background: transparent; color: var(--ink-2);
+  font-size: 13.5px; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  white-space: nowrap; transition: background .15s, color .15s;
+}
+.seg-btn:hover { color: var(--brand-2); background: rgba(31, 56, 100, .06); }
+[data-theme="dark"] .seg-btn:hover { background: rgba(255, 255, 255, .06); }
+.seg-btn.is-active {
+  background: var(--brand); color: #fff; font-weight: 600;
+  box-shadow: 0 1px 3px rgba(31, 56, 100, .3);
+}
+[data-theme="dark"] .seg-btn.is-active { color: #101725; }
+.seg-btn:disabled { opacity: .38; cursor: not-allowed; }
+.progress-text { font-size: 13.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* ---------- 主体 ---------- */
+main { max-width: 1040px; margin: 0 auto; padding: 22px 24px 0; }
+
+.list-head {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin: 6px 0 14px;
+}
+.list-head h2 { font-size: 18px; color: var(--brand); letter-spacing: .02em; }
+[data-theme="dark"] .list-head h2 { color: var(--brand-2); }
+.list-meta { font-size: 13px; color: var(--muted); }
+
+.question-list { display: flex; flex-direction: column; gap: 16px; }
+
+/* ---------- 题卡 ---------- */
+.qcard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px 18px;
+  box-shadow: var(--shadow);
+  position: relative;
+  scroll-margin-top: 92px;
+  transition: box-shadow .2s, border-color .2s;
+}
+.qcard::before {
+  content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 3px;
+  border-radius: 0 3px 3px 0; background: var(--brand-soft);
+}
+.qcard[data-type="calc"]::before { background: var(--accent); opacity: .5; }
+.qcard.is-current { border-color: var(--brand-2); box-shadow: 0 0 0 2px rgba(44, 75, 126, .14), var(--shadow); }
+
+.qhead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.qno {
+  font-family: var(--sans); font-weight: 700; font-size: 14px;
+  color: #fff; background: var(--brand); border-radius: 7px;
+  padding: 2px 10px; letter-spacing: .02em;
+}
+[data-theme="dark"] .qno { color: #101725; }
+.qtags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.tag {
+  font-size: 11.5px; line-height: 1.7; padding: 1px 9px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted); background: var(--card-2); white-space: nowrap;
+}
+.tag.score { color: var(--brand-2); border-color: rgba(44, 75, 126, .22); background: var(--brand-soft); }
+[data-theme="dark"] .tag.score { color: var(--brand-2); }
+.tag.kp { color: var(--accent); border-color: rgba(181, 138, 46, .3); background: rgba(181, 138, 46, .07); }
+.tag.vol { color: var(--muted); }
+.qstatus { margin-left: auto; font-size: 12.5px; font-weight: 600; }
+
+.qstem {
+  font-family: var(--serif);
+  font-size: 17px; line-height: 1.85; color: var(--ink);
+  margin-bottom: 12px;
+}
+.qstem .blank-hint { color: var(--muted); }
+
+/* ---------- 选项 ---------- */
+.options { display: flex; flex-direction: column; gap: 8px; }
+.opt {
+  display: flex; align-items: flex-start; gap: 11px;
+  padding: 10px 13px; border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--card-2);
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 16px; line-height: 1.7;
+  transition: border-color .14s, background .14s, transform .14s;
+  position: relative;
+}
+.opt:hover { border-color: var(--brand-2); background: var(--brand-soft); }
+.opt input {
+  position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0;
+}
+.opt-key {
+  flex: none; width: 25px; height: 25px; border-radius: 50%;
+  border: 1.5px solid var(--line); background: var(--card);
+  display: grid; place-items: center;
+  font-family: var(--sans); font-size: 12.5px; font-weight: 700; color: var(--ink-2);
+  margin-top: 1px; transition: all .14s;
+}
+.opt:hover .opt-key { border-color: var(--brand-2); color: var(--brand); }
+.opt-text { flex: 1; min-width: 0; word-break: break-word; }
+.opt-flag { flex: none; font-family: var(--sans); font-size: 12px; font-weight: 700; align-self: center; white-space: nowrap; }
+.opt-flag:empty { display: none; }
+
+/* 选中态（未提交） */
+.opt.is-checked { border-color: var(--brand); background: var(--brand-soft); }
+.opt.is-checked .opt-key { background: var(--brand); border-color: var(--brand); color: #fff; }
+[data-theme="dark"] .opt.is-checked .opt-key { color: #101725; }
+
+/* 提交后判定 */
+.opt.is-correct { border-color: var(--green); background: var(--green-bg); }
+.opt.is-correct .opt-key { background: var(--green); border-color: var(--green); color: #fff; }
+.opt.is-correct .opt-flag { color: var(--green); }
+.opt.is-wrong { border-color: var(--red); background: var(--red-bg); }
+.opt.is-wrong .opt-key { background: var(--red); border-color: var(--red); color: #fff; }
+.opt.is-wrong .opt-flag { color: var(--red); }
+.opt.is-missed { border-color: var(--amber); background: var(--amber-bg); }
+.opt.is-missed .opt-key { border-color: var(--amber); color: var(--amber); background: var(--card); }
+.opt.is-missed .opt-flag { color: var(--amber); }
+.opt.is-dim { opacity: .62; }
+.opt.is-locked { cursor: default; }
+.opt.is-locked:hover { border-color: var(--line); background: var(--card-2); }
+.opt.is-locked.is-correct:hover { border-color: var(--green); background: var(--green-bg); }
+.opt.is-locked.is-wrong:hover { border-color: var(--red); background: var(--red-bg); }
+.opt.is-locked.is-missed:hover { border-color: var(--amber); background: var(--amber-bg); }
+.opt.is-locked.is-checked:hover { border-color: var(--brand); background: var(--brand-soft); }
+
+.qstatus.ok { color: var(--green); }
+.qstatus.bad { color: var(--red); }
+.qstatus.part { color: var(--amber); }
+.qstatus.none { color: var(--muted); }
+
+/* ---------- 解析 ---------- */
+.analysis {
+  margin-top: 14px; padding: 13px 15px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--card-2);
+  border: 1px dashed var(--line);
+  font-size: 14.5px; line-height: 1.8;
+}
+.analysis-title {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-family: var(--sans); font-size: 12px; letter-spacing: .12em;
+  color: var(--muted); margin-bottom: 6px;
+}
+.analysis-ans { font-weight: 700; color: var(--brand); letter-spacing: .08em; }
+[data-theme="dark"] .analysis-ans { color: var(--brand-2); }
+.analysis p { font-family: var(--serif); color: var(--ink-2); }
+
+/* ---------- 计算题 ---------- */
+.asks { margin: 2px 0 12px; padding-left: 0; list-style: none; }
+.asks li {
+  font-family: var(--serif); font-size: 16px; line-height: 1.8;
+  color: var(--ink-2); padding-left: 4px;
+}
+.calc-area { margin-top: 10px; }
+.calc-label {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
+  font-size: 12.5px; color: var(--muted); margin-bottom: 6px;
+}
+.calc-saved { font-size: 12px; color: var(--green); opacity: 0; transition: opacity .3s; }
+.calc-saved.show { opacity: 1; }
+.calc-input {
+  width: 100%; min-height: 112px; resize: vertical;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--card-2); color: var(--ink);
+  padding: 11px 13px;
+  font-family: var(--serif); font-size: 15.5px; line-height: 1.75;
+}
+.calc-input:focus { outline: none; border-color: var(--brand-2); box-shadow: 0 0 0 3px rgba(44, 75, 126, .12); }
+.calc-input:disabled { opacity: .85; }
+
+.selfeval { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 11px; }
+.selfeval-label { font-size: 12.5px; color: var(--muted); }
+.selfeval-btns { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.eval-btn {
+  border: 1px solid var(--line); background: var(--card-2); color: var(--ink-2);
+  font-size: 12.5px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  transition: all .14s;
+}
+.eval-btn:hover { border-color: var(--brand-2); }
+.eval-btn.is-on[data-eval="full"] { background: var(--green-bg); border-color: var(--green); color: var(--green); font-weight: 600; }
+.eval-btn.is-on[data-eval="partial"] { background: var(--amber-bg); border-color: var(--amber); color: var(--amber); font-weight: 600; }
+.eval-btn.is-on[data-eval="none"] { background: var(--red-bg); border-color: var(--red); color: var(--red); font-weight: 600; }
+.eval-score { font-size: 12px; color: var(--muted); }
+
+.solution { margin-top: 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card-2); overflow: hidden; }
+.solution > summary {
+  list-style: none; cursor: pointer; padding: 10px 14px;
+  font-size: 13.5px; font-weight: 600; color: var(--brand-2);
+  display: flex; align-items: center; gap: 8px; user-select: none;
+}
+.solution > summary::-webkit-details-marker { display: none; }
+.solution > summary::before {
+  content: "▸"; font-size: 11px; transition: transform .18s; color: var(--muted);
+}
+.solution[open] > summary::before { transform: rotate(90deg); }
+.solution > summary:hover { background: var(--brand-soft); }
+.solution-body { padding: 4px 15px 16px; border-top: 1px solid var(--line-2); }
+.sol-legend { font-size: 11.5px; color: var(--muted); letter-spacing: .04em; margin: 10px 0 12px; }
+.sol-step { margin-bottom: 14px; }
+.sol-step-title {
+  font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--brand);
+  margin-bottom: 4px; padding-left: 9px; border-left: 3px solid var(--accent);
+}
+[data-theme="dark"] .sol-step-title { color: var(--brand-2); }
+.sol-line {
+  font-family: var(--serif); font-size: 15.5px; line-height: 1.85; color: var(--ink);
+  padding: 2px 0 2px 12px; word-break: break-word;
+}
+.sol-conclusion {
+  margin: 4px 0 12px; padding: 10px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--brand-soft); border-left: 3px solid var(--brand);
+  font-family: var(--serif); font-size: 15.5px; line-height: 1.8; color: var(--ink);
+}
+.sol-pitfall {
+  padding: 10px 13px; border-radius: var(--radius-sm);
+  background: var(--amber-bg); border-left: 3px solid var(--amber);
+  font-family: var(--serif); font-size: 15px; line-height: 1.8; color: var(--ink-2);
+}
+.sol-pitfall strong { color: var(--amber); font-family: var(--sans); font-size: 12px; letter-spacing: .1em; margin-right: 6px; }
+
+/* ---------- 结算面板 ---------- */
+.summary {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px 20px;
+  margin: 4px 0 22px;
+  border-top: 4px solid var(--brand);
+}
+.summary-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+.summary h2 { font-size: 19px; color: var(--brand); }
+[data-theme="dark"] .summary h2 { color: var(--brand-2); }
+.summary-note { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.score-box { display: flex; align-items: baseline; gap: 6px; }
+.score-label { font-size: 12px; letter-spacing: .12em; color: var(--muted); margin-right: 4px; }
+.score-value {
+  font-family: var(--mono); font-size: 44px; font-weight: 700; line-height: 1;
+  color: #C0271B; font-variant-numeric: tabular-nums;
+  transition: color .2s;
+}
+[data-theme="dark"] .score-value { color: #FF8B7E; }
+.score-max { font-size: 15px; color: var(--muted); }
+
+.stat-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
+  margin: 18px 0 20px;
+}
+.stat {
+  background: var(--card-2); border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm); padding: 11px 13px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.stat-k { font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+.stat-v { font-size: 21px; font-weight: 700; font-family: var(--mono); color: var(--ink); font-variant-numeric: tabular-nums; }
+.stat-sub { font-size: 11.5px; color: var(--muted); }
+
+.kp-block h3 { font-size: 14px; margin-bottom: 10px; color: var(--ink-2); }
+.kp-bars { display: flex; flex-direction: column; gap: 11px; }
+.kp-row { display: grid; grid-template-columns: 168px 1fr 92px; gap: 12px; align-items: center; }
+.kp-name { font-size: 13.5px; color: var(--ink-2); }
+.kp-track { display: block; height: 12px; border-radius: 999px; background: var(--bg-2); overflow: hidden; border: 1px solid var(--line-2); }
+.kp-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2C4B7E, #4A71AB); transition: width .5s ease; }
+.kp-row[data-kp="2.2"] .kp-fill { background: linear-gradient(90deg, #1F6F5C, #3A9B82); }
+.kp-row[data-kp="2.3"] .kp-fill { background: linear-gradient(90deg, #8A5A00, #C08B25); }
+.kp-val { font-size: 12.5px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+
+.advice {
+  margin-top: 18px; padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--brand-soft);
+  border-left: 3px solid var(--brand);
+  display: flex; gap: 12px; align-items: flex-start; flex-wrap: wrap;
+}
+.advice-tag {
+  font-size: 11px; letter-spacing: .1em; font-weight: 700;
+  color: #fff; background: var(--brand); padding: 1px 8px; border-radius: 4px;
+  white-space: nowrap; margin-top: 3px;
+}
+[data-theme="dark"] .advice-tag { color: #101725; }
+.advice p { font-family: var(--serif); font-size: 15.5px; line-height: 1.8; color: var(--ink); flex: 1; min-width: 220px; }
+
+/* ---------- 底部操作条 ---------- */
+.actionbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  background: rgba(255, 255, 255, .94);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -2px 16px rgba(23, 34, 56, .06);
+}
+[data-theme="dark"] .actionbar { background: rgba(26, 34, 51, .94); }
+.actionbar-inner {
+  max-width: 1040px; margin: 0 auto; padding: 11px 24px;
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+}
+.hint { margin-left: auto; font-size: 12px; color: var(--muted); }
+
+.btn {
+  border: 1px solid var(--line); background: var(--card); color: var(--ink-2);
+  font-size: 13.5px; padding: 8px 15px; border-radius: 9px; cursor: pointer;
+  transition: all .15s; white-space: nowrap;
+}
+.btn:hover:not(:disabled) { border-color: var(--brand-2); color: var(--brand); box-shadow: var(--shadow-sm); }
+.btn:disabled { opacity: .42; cursor: not-allowed; }
+.btn.primary {
+  background: var(--brand); border-color: var(--brand); color: #fff; font-weight: 600;
+  padding: 9px 22px;
+}
+.btn.primary:hover:not(:disabled) { background: #16294B; color: #fff; }
+[data-theme="dark"] .btn.primary { color: #101725; }
+[data-theme="dark"] .btn.primary:hover:not(:disabled) { background: var(--brand-2); }
+.btn.ghost { background: transparent; }
+.btn.small { padding: 5px 12px; font-size: 12.5px; border-radius: 8px; }
+.masthead .btn { color: rgba(255, 255, 255, .9); border-color: rgba(255, 255, 255, .22); background: rgba(255, 255, 255, .08); }
+.masthead .btn:hover { color: #fff; border-color: rgba(255, 255, 255, .5); }
+
+.list-end { text-align: center; color: var(--muted); font-size: 13px; padding: 22px 0 10px; }
+
+.toast {
+  position: fixed; left: 50%; bottom: 84px; transform: translate(-50%, 12px);
+  background: #1B2233; color: #fff; font-size: 13.5px;
+  padding: 10px 18px; border-radius: 9px; box-shadow: var(--shadow);
+  opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s;
+  z-index: 90; max-width: min(90vw, 520px); text-align: center;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+.empty-state {
+  background: var(--card); border: 1px dashed var(--line);
+  border-radius: var(--radius); padding: 44px 20px; text-align: center;
+  color: var(--muted); font-family: var(--serif); font-size: 16px;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 860px) {
+  .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kp-row { grid-template-columns: 1fr; gap: 4px; }
+  .kp-val { text-align: left; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 15.5px; padding-bottom: 116px; }
+  .masthead-inner { flex-direction: column; gap: 16px; padding: 20px 16px 18px; }
+  .masthead-side { flex-direction: row; align-items: center; width: 100%; justify-content: space-between; }
+  .timer { flex-direction: row; align-items: baseline; gap: 8px; padding: 6px 12px; }
+  .timer-value { font-size: 20px; }
+  .controlbar-inner { padding: 10px 16px; gap: 8px 14px; }
+  .control-group.grow { margin-left: 0; width: 100%; }
+  .progress-text { font-size: 12.5px; }
+  .seg-btn { padding: 5px 11px; font-size: 12.5px; }
+  main { padding: 16px 14px 0; }
+  .qcard { padding: 16px 15px 15px; border-radius: 12px; }
+  .qstem { font-size: 16px; }
+  .opt { font-size: 15.5px; padding: 10px 11px; }
+  .summary { padding: 18px 16px 16px; }
+  .score-value { font-size: 38px; }
+  .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .stat-v { font-size: 18px; }
+  .actionbar-inner { padding: 9px 14px; gap: 7px; }
+  .actionbar .btn { font-size: 12.5px; padding: 7px 12px; }
+  .actionbar .btn.primary { padding: 8px 16px; }
+  .actionbar .btn#printBtn { display: none; }
+  .hint { display: none; }
+}
+
+@media (max-width: 430px) {
+  .segmented { width: 100%; }
+  .seg-btn { flex: 1 1 auto; text-align: center; }
+  .control-group { width: 100%; }
+  .qno { font-size: 13px; }
+  .actionbar-inner .btn:nth-of-type(5) { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- 打印 ---------- */
+@media print {
+  :root {
+    --ink: #000; --ink-2: #111; --muted: #444;
+    --bg: #fff; --card: #fff; --card-2: #fff;
+    --line: #bbb; --line-2: #ddd; --brand: #1F3864;
+    --shadow: none; --shadow-sm: none;
+    --green: #14713f; --red: #a32219; --amber: #7a5100;
+    --green-bg: #fff; --red-bg: #fff; --amber-bg: #fff;
+  }
+  body { background: #fff; color: #000; padding: 0; font-size: 11.5pt; }
+  .masthead { background: #fff !important; color: #000; border-bottom: 2px solid #1F3864; }
+  .masthead h1, .subtitle, .eyebrow { color: #000 !important; }
+  .eyebrow { letter-spacing: .1em; }
+  .masthead-side, .controlbar, .actionbar, .toast, .skip,
+  .selfeval, .calc-saved, .list-end, .hint { display: none !important; }
+  main { max-width: none; padding: 0; }
+  .question-list { gap: 10px; }
+  .qcard {
+    box-shadow: none !important; border: 1px solid #bbb;
+    break-inside: avoid; page-break-inside: avoid;
+    padding: 10px 12px; margin-bottom: 8px;
+  }
+  .qcard::before { display: none; }
+  .qstem, .opt, .sol-line, .sol-conclusion, .sol-pitfall, .analysis p { font-size: 10.5pt; line-height: 1.55; }
+  .qno { background: #1F3864 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .tag { border-color: #999; color: #333; background: #fff; }
+  .opt.is-correct, .opt.is-missed, .opt.is-wrong { background: #fff !important; }
+  .opt.is-correct { border-left: 3px solid #14713f; }
+  .opt.is-missed { border-left: 3px dashed #7a5100; }
+  .opt.is-wrong { border-left: 3px solid #a32219; }
+  .opt-flag { font-weight: 700; }
+  .analysis { border: 1px solid #bbb; background: #fff; break-inside: avoid; }
+  .solution { border: 1px solid #bbb; background: #fff; }
+  .solution > summary { display: none; }
+  .solution-body { border-top: 0; padding-top: 0; }
+  .summary { break-inside: avoid; border: 1px solid #999; box-shadow: none; }
+  .score-value { color: #a32219 !important; }
+  .kp-fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a[href]::after { content: ""; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到题目</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <p class="eyebrow">高等院校经济管理类专业核心课程 · 学习辅导用书</p>
+      <h1>《财务管理（第5版）》第2章　财务管理基本价值观念</h1>
+      <p class="subtitle"><strong>2.1 — 2.3</strong> 在线练习　·　A / B / C 三套卷　·　共 48 题　·　每套 100 分</p>
+    </div>
+    <div class="masthead-side">
+      <div class="timer" id="timerBox" role="timer" aria-live="polite">
+        <span class="timer-label">剩余时间</span>
+        <span class="timer-value" id="timerValue">90:00</span>
+      </div>
+      <div class="timer-actions">
+        <button type="button" class="btn ghost small" id="pauseBtn" aria-pressed="false">暂停</button>
+        <button type="button" class="btn ghost small" id="themeBtn" title="切换亮色 / 暗色主题" aria-label="切换主题">🌙 暗色</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="controlbar">
+  <div class="controlbar-inner">
+    <div class="control-group" role="group" aria-label="练习模式">
+      <span class="control-label">模式</span>
+      <div class="segmented" id="modeSwitch">
+        <button type="button" class="seg-btn is-active" data-mode="single">单卷练习</button>
+        <button type="button" class="seg-btn" data-mode="all">全部 48 题混合</button>
+      </div>
+    </div>
+    <div class="control-group" role="group" aria-label="卷别" id="volGroup">
+      <span class="control-label">卷别</span>
+      <div class="segmented" id="volSwitch">
+        <button type="button" class="seg-btn is-active" data-vol="A">A 卷·基础</button>
+        <button type="button" class="seg-btn" data-vol="B">B 卷·提高</button>
+        <button type="button" class="seg-btn" data-vol="C">C 卷·综合</button>
+      </div>
+    </div>
+    <div class="control-group grow">
+      <span class="control-label">进度</span>
+      <span class="progress-text" id="progressText">选择题 0 / 36　·　计算题 0 / 12</span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="summary" id="summary" hidden aria-labelledby="summaryTitle">
+    <div class="summary-head">
+      <div>
+        <h2 id="summaryTitle">成绩结算</h2>
+        <p class="summary-note" id="summaryNote"></p>
+      </div>
+      <div class="score-box">
+        <span class="score-label">总分</span>
+        <span class="score-value" id="scoreValue">0</span>
+        <span class="score-max" id="scoreMax">/ 100</span>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><span class="stat-k">选择题正确率</span><span class="stat-v" id="accValue">0%</span><span class="stat-sub" id="accSub">0 / 36 题全对</span></div>
+      <div class="stat"><span class="stat-k">用时</span><span class="stat-v" id="usedValue">00:00</span><span class="stat-sub" id="usedSub">限时 90 分钟</span></div>
+      <div class="stat"><span class="stat-k">计算题自评</span><span class="stat-v" id="calcValue">0 / 0</span><span class="stat-sub">已答对 / 部分对 / 未答对</span></div>
+      <div class="stat"><span class="stat-k">作答完成度</span><span class="stat-v" id="doneValue">0%</span><span class="stat-sub" id="doneSub">已作答 0 / 0 题</span></div>
+    </div>
+
+    <div class="kp-block">
+      <h3>知识点得分（2.1 / 2.2 / 2.3）</h3>
+      <div class="kp-bars" id="kpBars"></div>
+    </div>
+
+    <div class="advice" id="advice">
+      <span class="advice-tag" id="adviceTag">分档建议</span>
+      <p id="adviceText"></p>
+    </div>
+  </section>
+
+  <div class="list-head">
+    <h2 id="listTitle">A 卷·基础</h2>
+    <p id="listMeta" class="list-meta">16 题 · 满分 100 分 · 建议用时 90 分钟</p>
+  </div>
+
+  <div id="questionList" class="question-list" aria-live="polite"></div>
+
+  <p class="list-end" id="listEnd">— 本卷共 16 题，答题完毕请点「提交试卷」—</p>
+</main>
+
+<div class="actionbar">
+  <div class="actionbar-inner">
+    <button type="button" class="btn primary" id="submitBtn">提交试卷</button>
+    <button type="button" class="btn" id="wrongBtn" disabled>只显示错题</button>
+    <button type="button" class="btn" id="resetBtn">重新做一遍</button>
+    <button type="button" class="btn" id="exportBtn">导出我的作答为 txt</button>
+    <button type="button" class="btn ghost" id="printBtn">打印 / 存为 PDF</button>
+    <span class="hint" id="hintText">提示：按 1—4 或 A—D 选项，←/→ 切题</span>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* 自动生成：内容逐字取自《财务管理第5版_第2章2.1-2.3_三套练习题.docx》 */
+window.QUIZ_DATA = {"meta":{"book":"《财务管理（第5版）》","chapter":"第2章 财务管理基本价值观念","range":"2.1 — 2.3","volumeNames":{"A":"A 卷·基础","B":"B 卷·提高","C":"C 卷·综合"},"minPerVolume":90,"kpLabels":{"2.1":"2.1 资金的时间价值","2.2":"2.2 利息率","2.3":"2.3 投资的风险价值"},"source":"财务管理第5版_第2章2.1-2.3_三套练习题.docx"},"questions":[{"id":"A-1","vol":"A","no":1,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于资金时间价值的表述，正确的是（　　）。","options":[{"key":"A","text":"资金时间价值是资金存入银行必然获得的利息，其大小由银行挂牌利率决定"},{"key":"B","text":"资金时间价值是在没有风险和没有通货膨胀的条件下，资金经历一定时间所增加的价值，通常以社会平均资金利润率表示"},{"key":"C","text":"资金时间价值来源于时间本身，与资金是否投入生产经营无关"},{"key":"D","text":"通货膨胀率越高，资金的时间价值越大"}],"answer":["B"],"explanation":"B 项点明了“无风险、无通胀”这一前提，并给出社会平均资金利润率这一参照，表述完整。A 项把时间价值与含风险、含通胀的银行利率混为一谈；C 项否认增值来源于生产经营中创造的剩余价值；D 项把通货膨胀这一独立因素塞进时间价值。"},{"id":"A-2","vol":"A","no":2,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于单利计息与复利计息，下列说法正确的是（　　）。","options":[{"key":"A","text":"单利计息下，各期利息也并入本金重复计息"},{"key":"B","text":"复利计息下，每期利息均以上期本利和为基础计算，体现“利息的利息”"},{"key":"C","text":"期限越长，单利终值与复利终值的差额越小"},{"key":"D","text":"单利终值系数与复利终值系数互为倒数"}],"answer":["B"],"explanation":"B 项是复利计息的定义。A 项恰好说反，只有复利才把利息并入本金；C 项差额随期限延长而扩大；D 项单利终值系数 (1 + i×n) 与单利现值系数互为倒数、复利终值系数与复利现值系数互为倒数，跨类不构成倒数。"},{"id":"A-3","vol":"A","no":3,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"下列系数关系中，正确的是（　　）。","options":[{"key":"A","text":"(F/A, i, n) × (A/P, i, n) = 1"},{"key":"B","text":"(F/A, i, n) × (A/F, i, n) = 1"},{"key":"C","text":"(P/A, i, n) × (A/F, i, n) = 1"},{"key":"D","text":"(F/P, i, n) × (P/A, i, n) = 1"}],"answer":["B"],"explanation":"年金终值系数与偿债基金系数互为倒数，即 (F/A,i,n) × (A/F,i,n) = 1。A、C 两项把四个系数错配；D 项 (F/P,i,n) × (P/A,i,n) 既不同类也不互为倒数，以 i=6%、n=5 代入得 1.338226 × 4.212364 ≈ 5.64 ≠ 1。"},{"id":"A-4","vol":"A","no":4,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某企业连续 5 年于每年年初存入 1,000 元，年利率 6%。第 5 年年末可取得的终值为（　　）元。已知 (F/A,6%,5)=5.637093，(F/A,6%,6)=6.975319。","options":[{"key":"A","text":"5,637.09"},{"key":"B","text":"5,975.32"},{"key":"C","text":"6,975.32"},{"key":"D","text":"5,318.01"}],"answer":["B"],"explanation":"年初存入属于预付年金：FV = A × (F/A,i,n) × (1 + i) = 1,000 × 5.637093 × 1.06 = 5,975.32（元）。A 项按普通年金计算，漏乘 (1 + 6%)；C 项只用“期数加 1”，未再“系数减 1”；D 项把 (1 + i) 误用为除数。"},{"id":"A-5","vol":"A","no":5,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"递延年金共 n 期、递延期 m 期，下列现值算式中正确的是（　　）。","options":[{"key":"A","text":"PV = A × (P/A, i, n) × (P/F, i, m)"},{"key":"B","text":"PV = A × (P/A, i, n) × (F/P, i, m)"},{"key":"C","text":"PV = A × (P/A, i, m) × (P/F, i, n)"},{"key":"D","text":"PV = A × [(P/A, i, n) − (P/A, i, m)]"}],"answer":["A"],"explanation":"A 项先把 n 期年金折到递延期期末，再折到第 0 期，两次折现方向一致。B 项第二段用了终值系数，把折现做成了复利；C 项把 n 与 m 的位置对调；D 项括号内应为 (P/A,i,m+n) − (P/A,i,m)。"},{"id":"A-6","vol":"A","no":6,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某银行报价年利率 8%，按季度复利计息，则该笔资金的实际年利率为（　　）。","options":[{"key":"A","text":"8.00%"},{"key":"B","text":"8.16%"},{"key":"C","text":"8.24%"},{"key":"D","text":"8.30%"}],"answer":["C"],"explanation":"EAR = (1 + 8% ÷ 4)^4 − 1 = 1.02^4 − 1 = 8.24%。A 项按单利口径；B 项是按半年复利 (1.04^2 − 1 = 8.16%)；D 项是按月复利 (1 + 8%/12)^12 − 1 = 8.30%，把“按季”错记为“按月”。"},{"id":"A-7","vol":"A","no":7,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"按费雪效应的精确关系式，若名义利率为 10%、通货膨胀率为 4%，则实际利率为（　　）。","options":[{"key":"A","text":"6.00%"},{"key":"B","text":"5.77%"},{"key":"C","text":"14.00%"},{"key":"D","text":"4.00%"}],"answer":["B"],"explanation":"1 + 实际利率 = (1 + 10%) ÷ (1 + 4%) = 1.057692，实际利率 = 5.77%。A 项是“名义减通胀”的近似算法（6.00%）；C 项把两者相加；D 项直接拿通胀率当实际利率。题目限定“精确关系式”，故不能取近似值。"},{"id":"A-8","vol":"A","no":8,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于风险与风险报酬，下列说法正确的是（　　）。","options":[{"key":"A","text":"风险可以事先知道全部可能结果及其概率，因而等同于不确定性"},{"key":"B","text":"投资者因冒风险投资而获得的、超过时间价值的那部分额外报酬称为风险报酬"},{"key":"C","text":"系统性风险可以通过增加证券种类予以分散"},{"key":"D","text":"标准差越大，说明投资项目的风险越小"}],"answer":["B"],"explanation":"B 项是风险报酬的定义。A 项混淆风险与不确定性——不确定性的结果连概率分布都无法预知；C 项系统性风险不可分散，可分散的是非系统风险；D 项标准差越大风险越大，说反了。"},{"id":"A-9","vol":"A","no":9,"type":"multi","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于普通年金与预付年金，下列说法正确的有（　　）。","options":[{"key":"A","text":"普通年金发生在每期期末，预付年金发生在每期期初"},{"key":"B","text":"预付年金终值系数等于同期普通年金终值系数乘以 (1 + i)"},{"key":"C","text":"预付年金现值系数等于同期普通年金现值系数除以 (1 + i)"},{"key":"D","text":"预付年金终值也可按“期数加 1、系数减 1”的方法计算"}],"answer":["A","B","D"],"explanation":"C 项错在方向：预付年金现值系数 = (P/A,i,n) × (1 + i)，是“乘”不是“除”。B、D 两项都正确，且彼此等价：(F/A,i,n+1) − 1 = (F/A,i,n) × (1 + i)。A 项为基础定义。"},{"id":"A-10","vol":"A","no":10,"type":"multi","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于递延年金与永续年金，下列说法正确的有（　　）。","options":[{"key":"A","text":"递延年金在最初若干期没有收付款项，其现值大小与递延期长短有关"},{"key":"B","text":"递延年金终值的大小与递延期无关，只与实际收付期数和年金数额有关"},{"key":"C","text":"永续年金没有终值，其现值可用 A ÷ i 计算"},{"key":"D","text":"永续年金现值系数随期数增加而不断增大，最终趋于无穷"}],"answer":["A","B","C"],"explanation":"D 项错：(P/A,i,n) 在 n 趋于无穷时趋于 1/i，是一个有限值，正因如此永续年金才有确定现值。A 项对应“先折年金现值、再折递延期”的思路；B 项因为终值只与收付期内的复利累积有关；C 项点明永续年金“有现值、无终值”。"},{"id":"A-11","vol":"A","no":11,"type":"multi","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"关于利率的构成与决定因素，下列说法正确的有（　　）。","options":[{"key":"A","text":"纯利率是在没有风险和没有通货膨胀条件下的社会平均资金利润率"},{"key":"B","text":"通货膨胀补偿是利率的组成部分，预期通货膨胀率上升会推高名义利率"},{"key":"C","text":"违约风险报酬、流动性风险报酬和期限风险报酬都属于风险报酬的构成内容"},{"key":"D","text":"利率越高，说明资金的时间价值一定越大"}],"answer":["A","B","C"],"explanation":"D 项错：利率 = 纯利率 + 通货膨胀补偿 + 风险报酬，利率上升可能来自风险补偿或通胀补偿，不能反推时间价值变大。A、B、C 三项分别对应纯利率的定义、通胀补偿的作用与风险报酬的三个来源。"},{"id":"A-12","vol":"A","no":12,"type":"multi","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于风险报酬率与必要报酬率 R = Rf + b·V，下列说法正确的有（　　）。","options":[{"key":"A","text":"V 为标准离差率，等于标准差除以期望值"},{"key":"B","text":"b 为风险报酬系数，反映投资者对风险的偏好程度"},{"key":"C","text":"在 Rf 与 b 一定时，V 越大，必要报酬率越高"},{"key":"D","text":"标准差相同的两个项目，其标准离差率一定相同"}],"answer":["A","B","C"],"explanation":"D 项错：V = σ ÷ E，标准差相同而期望值不同时 V 也不同，这正是比较不同规模项目风险要用标准离差率而非标准差的原因。A、B、C 三项分别是 V、b 的含义与 R 的单调性。"},{"id":"A-13","vol":"A","no":13,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某公司拟将闲置资金 50,000 元存入银行，期限 8 年，年利率 4.5%。","asks":[{"no":1,"text":"（1）若按单利计息，到期本利和为多少？"},{"no":2,"text":"（2）若按复利计息，到期本利和为多少？"},{"no":3,"text":"（3）比较两者差额，并说明差额的来源。"},{"no":4,"text":"（4）若企业希望 8 年后取得 80,000 元，在年利率 4.5%、按复利计息的条件下，现在应一次存入多少元？"}],"solution":{"steps":[{"title":"（1）单利终值","lines":["FV = PV × (1 + i × n) = 50,000 × (1 + 4.5% × 8) = 50,000 × 1.36 = 68,000.00（元）"]},{"title":"（2）复利终值","lines":["FV = PV × (1 + i)^n = 50,000 × (1 + 4.5%)^8 = 50,000 × 1.422101 ≈ 71,105.03（元）"]},{"title":"（3）差额","lines":["71,105.03 − 68,000.00 = 3,105.03（元）"]},{"title":"（4）复利现值","lines":["PV = FV × (1 + i)^(−n) = 80,000 × (1 + 4.5%)^(−8) = 80,000 × 0.703185 ≈ 56,254.81（元）"]}],"conclusion":"结论：复利终值 71,105.03 元比单利终值 68,000.00 元多 3,105.03 元，差额来自“利息的利息”；若 8 年后需取得 80,000 元，现在应一次存入 56,254.81 元。","pitfall":"易错提示：不要用“复利终值 − 本金”与“单利终值 − 本金”分别求利息再相减，两者本金相同，直接比较终值即可；第（4）问是折现，指数取负号 (1 + i)^(−n)，不要与终值系数混用；另外 8 次方不能误按 8 次单利计算。"}},{"id":"A-14","vol":"A","no":14,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某企业租入一台设备，租期 6 年，每年支付租金 20,000 元，年利率 5%。已知 (P/A,5%,6)=5.075692，(F/A,5%,6)=6.801913。","asks":[{"no":1,"text":"（1）若每年年末支付，租金现值和终值各为多少？"},{"no":2,"text":"（2）若改为每年年初支付，租金现值为多少？"},{"no":3,"text":"（3）年初支付比年末支付多付的现值是多少？"}],"solution":{"steps":[{"title":"（1）普通年金现值与终值","lines":["PV = A × (P/A, i, n) = 20,000 × 5.075692 = 101,513.84（元）","FV = A × (F/A, i, n) = 20,000 × 6.801913 = 136,038.26（元）"]},{"title":"（2）预付年金现值","lines":["PV = A × (P/A, i, n) × (1 + i) = 101,513.84 × 1.05 = 106,589.53（元）"]},{"title":"（3）差额","lines":["106,589.53 − 101,513.84 = 5,075.69（元）"]}],"conclusion":"结论：年初支付使每笔租金提前一年，现值多 5,075.69 元，恰等于 101,513.84 × 5%；若按 6 期预付年金系数 (P/A,5%,5) + 1 计算也应得到同一结果。","pitfall":"易错提示：预付年金只调整一次 (1 + i)。若既乘 (1 + i) 又改用 n + 1 期系数，等于重复调整，结果会偏大；本题“多付的现值”是两笔现值之差，不是租金总额之差。"}},{"id":"A-15","vol":"A","no":15,"type":"calc","score":10,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某银行推出两款一年期存款产品：甲产品年利率 8%，按季度复利计息；乙产品年利率 8.1%，按年复利计息。某企业拟存入 100,000 元。","asks":[{"no":1,"text":"（1）计算甲产品的实际年利率（EAR）。"},{"no":2,"text":"（2）分别计算两款产品一年后的本利和，判断哪款更优。"},{"no":3,"text":"（3）若企业要求实际年收益率达到 8%，甲产品按季复利的名义年利率应为多少？"}],"solution":{"steps":[{"title":"（1）甲产品实际年利率","lines":["EAR = (1 + i ÷ m)^m − 1 = (1 + 8% ÷ 4)^4 − 1 = 1.02^4 − 1 = 8.24%"]},{"title":"（2）一年后本利和","lines":["甲：FV = 100,000 × 1.02^4 = 108,243.22（元）","乙：FV = 100,000 × (1 + 8.1%) = 108,100.00（元）","甲比乙多 143.22 元，故甲产品更优：其名义利率低 0.1 个百分点，实际年利率却高 0.14 个百分点。"]},{"title":"（3）由实际年利率反求名义利率","lines":["1 + 8% = (1 + i ÷ 4)^4，i = 4 × [(1 + 8%)^(1/4) − 1] = 4 × (1.019427 − 1) = 7.77%"]}],"conclusion":"结论：甲产品实际年利率 8.24%，一年后本利和 108,243.22 元，优于乙产品的 108,100.00 元；若要求实际收益率 8%，按季复利的名义年利率应为 7.77%。","pitfall":"易错提示：比较不同计息方式的存款，必须先统一折算为实际年利率再比较，不能只看挂牌名义利率；第（3）问是“由实际求名义”的逆运算，不能把 8% 直接乘 4 或除以 4。"}},{"id":"A-16","vol":"A","no":16,"type":"calc","score":10,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"某公司拟投资一个项目，预计报酬率及概率分布为：市场景气（概率 0.3）报酬率 20%，一般（概率 0.5）报酬率 12%，衰退（概率 0.2）报酬率 −4%。无风险报酬率 4%，风险报酬系数 b = 0.12。","asks":[{"no":1,"text":"（1）计算期望报酬率；"},{"no":2,"text":"（2）计算标准差；"},{"no":3,"text":"（3）计算标准离差率；"},{"no":4,"text":"（4）计算风险报酬率与必要报酬率；"},{"no":5,"text":"（5）判断该项目是否应投资。"}],"solution":{"steps":[{"title":"（1）期望报酬率","lines":["E(R) = 0.3 × 20% + 0.5 × 12% + 0.2 × (−4%) = 6% + 6% − 0.8% = 11.20%"]},{"title":"（2）标准差","lines":["σ = [0.3 × (20% − 11.2%)^2 + 0.5 × (12% − 11.2%)^2 + 0.2 × (−4% − 11.2%)^2]^(1/2)","= (0.3 × 0.007744 + 0.5 × 0.000064 + 0.2 × 0.023104)^(1/2) = (0.006976)^(1/2) = 8.35%"]},{"title":"（3）标准离差率","lines":["V = σ ÷ E(R) = 8.35% ÷ 11.20% = 74.57%"]},{"title":"（4）风险报酬率与必要报酬率","lines":["RR = b × V = 0.12 × 74.57% = 8.95%","R = Rf + b × V = 4% + 8.95% = 12.95%"]},{"title":"（5）投资判断","lines":["E(R) = 11.20% < R = 12.95%，期望报酬率不足以补偿所承担的风险，不应投资（差 1.75 个百分点）。"]}],"conclusion":"结论：项目期望报酬率 11.20%，标准差 8.35%，标准离差率 74.57%，风险报酬率 8.95%，必要报酬率 12.95%；期望报酬率低于必要报酬率，方案不可行。","pitfall":"易错提示：方差计算中概率要与离差平方逐一对应，漏乘概率或把百分数当小数会相差 100 倍；V 用两个百分数相除（8.35% ÷ 11.20%），不要漏写百分号。"}},{"id":"B-1","vol":"B","no":1,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某项目前 3 年无现金流入，从第 4 年起连续 5 年每年年末流入 10,000 元，折现率 8%。已知 (P/A,8%,5)=3.992710，(P/F,8%,3)=0.793832，(P/A,8%,8)=5.746639。其现值为（　　）元。","options":[{"key":"A","text":"39,927.10"},{"key":"B","text":"31,695.42"},{"key":"C","text":"57,466.39"},{"key":"D","text":"50,296.65"}],"answer":["B"],"explanation":"递延期 m = 3、收付期 n = 5：PV = 10,000 × 3.992710 × 0.793832 = 31,695.41（元）。A 项漏折递延期（把 m 当作 0）；C 项用 8 期年金现值系数，把 m + n 当成了 n；D 项把 (P/F) 误作 (F/P)，折现方向反了。"},{"id":"B-2","vol":"B","no":2,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于永续年金，下列说法正确的是（　　）。","options":[{"key":"A","text":"永续年金既有现值也有终值"},{"key":"B","text":"永续年金现值 PV = A ÷ i，折现率上升则现值下降"},{"key":"C","text":"永续年金现值系数随期数增加趋于无穷"},{"key":"D","text":"永续年金必须每期期初支付"}],"answer":["B"],"explanation":"A 项永续年金没有终值；C 项 (P/A,i,n) 随 n 增大趋于 1/i，是有限值；D 项无限期等额收付通常指每期期末，并无“必须期初”的限定，期初永续年金只是另一种约定。"},{"id":"B-3","vol":"B","no":3,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"用插值法推算贴现率或期数时，下列说法正确的是（　　）。","options":[{"key":"A","text":"插值法适用于所求系数落在两张系数表列（或行）之间、且该小区间内系数与利率近似呈线性关系的情形"},{"key":"B","text":"所求利率一定等于两个基准利率的算术平均数"},{"key":"C","text":"插值结果的精度与两个基准利率的间距无关"},{"key":"D","text":"插值法只能用于求利率，不能用于求期数"}],"answer":["A"],"explanation":"B 项只有所求系数恰在中点时才等于算术平均；C 项间距越小越接近线性，精度越高；D 项期数同样可按比例插值。A 项是插值法的适用条件。"},{"id":"B-4","vol":"B","no":4,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"其他条件相同，关于计息次数与终值的关系，下列说法正确的是（　　）。","options":[{"key":"A","text":"名义利率一定时，一年内计息次数越多，实际年利率越高，终值越大"},{"key":"B","text":"名义利率一定时，计息次数越多，实际年利率越低"},{"key":"C","text":"连续复利下的实际年利率等于名义利率"},{"key":"D","text":"按季复利与按月复利的实际年利率相同"}],"answer":["A"],"explanation":"B 项方向相反；C 项连续复利 EAR = e^i − 1，高于名义利率；D 项 m 不同 EAR 必不同，以 8% 为例按季为 8.24%、按月为 8.30%。"},{"id":"B-5","vol":"B","no":5,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某项目要求达到 6% 的实际收益率，预计通货膨胀率为 2%，按费雪效应，该项目应实现的名义收益率约为（　　）。","options":[{"key":"A","text":"8.00%"},{"key":"B","text":"8.12%"},{"key":"C","text":"3.92%"},{"key":"D","text":"6.12%"}],"answer":["B"],"explanation":"(1 + 6%) × (1 + 2%) − 1 = 8.12%。A 项为 6% + 2% 的简单相加；C 项把除法方向弄反，(1.06 ÷ 1.02) − 1 = 3.92%；D 项误用 6% × 1.02，只把本金按通胀调整而漏掉交叉项。"},{"id":"B-6","vol":"B","no":6,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"关于利率中的风险补偿，下列说法正确的是（　　）。","options":[{"key":"A","text":"流动性风险报酬是指借款人不能按期还本付息的可能性所要求的补偿"},{"key":"B","text":"期限风险报酬是指因借款期限长短不同而要求的补偿，期限越长通常越高"},{"key":"C","text":"违约风险可以通过分散投资完全消除，因此债券利率中不含违约补偿"},{"key":"D","text":"纯利率等于银行一年期存款利率"}],"answer":["B"],"explanation":"A 项描述的是违约风险而非流动性风险（后者指资产不能迅速变现）；C 项违约风险虽可通过组合部分分散，但债权人仍要求补偿，利率中必须包含；D 项纯利率不含风险与通胀补偿，低于存款利率。"},{"id":"B-7","vol":"B","no":7,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"若两种证券报酬率的相关系数 ρ = −1，在两种证券权重均为正的常规区间内，下列说法正确的是（　　）。","options":[{"key":"A","text":"组合标准差等于两种证券标准差的加权平均数"},{"key":"B","text":"组合风险可降到最低，适当权重下理论上可构建标准差为零的组合"},{"key":"C","text":"组合标准差大于两种证券标准差的加权平均数"},{"key":"D","text":"相关系数对组合风险没有影响"}],"answer":["B"],"explanation":"A 项是 ρ = +1 的结论；C 项方向相反，ρ < 1 时组合标准差小于加权平均数；D 项相关系数正是决定分散效果的关键。ρ = −1 时取 w1σ1 = w2σ2 即可使组合标准差为零。"},{"id":"B-8","vol":"B","no":8,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"某证券的 β 系数为 1.2，下列说法正确的是（　　）。","options":[{"key":"A","text":"该证券的系统风险相当于市场组合的 1.2 倍"},{"key":"B","text":"该证券的总风险比市场组合高 20%"},{"key":"C","text":"该证券的期望报酬率一定比市场组合高 20%"},{"key":"D","text":"β 系数衡量的是可以通过组合分散掉的那部分风险"}],"answer":["A"],"explanation":"β 衡量的是系统风险，β = 1.2 表示其系统风险为市场组合的 1.2 倍。B 项把系统风险说成总风险；C 项 β 只决定系统风险的相对大小，期望报酬率还受无风险利率与市场风险溢酬影响，不能简单按 20% 推算；D 项可分散的是非系统风险。"},{"id":"B-9","vol":"B","no":9,"type":"multi","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于年金系数之间的关系，下列说法正确的有（　　）。","options":[{"key":"A","text":"(P/A, i, n) 与 (A/P, i, n) 互为倒数"},{"key":"B","text":"(F/P, i, n) = 1 ÷ (P/F, i, n)"},{"key":"C","text":"预付年金终值系数 = (F/A, i, n−1) + 1"},{"key":"D","text":"递延年金现值 = A × [(P/A, i, m+n) − (P/A, i, m)]"}],"answer":["A","B","D"],"explanation":"C 项错：“期数减 1、系数加 1”是预付年金现值的算法；预付年金终值应为 (F/A,i,n+1) − 1 或 (F/A,i,n) × (1 + i)，两个方向都错。A、B 是系数倒数关系，D 是递延年金现值的第二种算法。"},{"id":"B-10","vol":"B","no":10,"type":"multi","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于贴现率与期数的推算，下列说法正确的有（　　）。","options":[{"key":"A","text":"一次性收付款项可依据 (F/P,i,n) 或 (P/F,i,n) 反查 i 或 n"},{"key":"B","text":"年金问题求 i 时，可先算出年金现值（或终值）系数，再查表并插值"},{"key":"C","text":"插值法的前提是所取小区间内系数与利率近似呈线性关系"},{"key":"D","text":"插值法求得的利率是精确解，不存在误差"}],"answer":["A","B","C"],"explanation":"D 项错：插值法是在线性假设下的近似，区间越窄越接近真值，但一般仍有误差，必要时可缩小间距或改用逐次测试逼近。A、B、C 三项分别是系数反查、年金插值步骤与适用前提。"},{"id":"B-11","vol":"B","no":11,"type":"multi","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"关于名义利率、实际利率与费雪效应，下列说法正确的有（　　）。","options":[{"key":"A","text":"一年内多次复利时，实际年利率高于名义年利率"},{"key":"B","text":"计息次数趋于无穷时，实际年利率趋于 e^i − 1"},{"key":"C","text":"费雪效应表明名义利率随预期通货膨胀率上升而上升"},{"key":"D","text":"实际利率等于名义利率减通货膨胀率，该近似式在任何通胀水平下都精确成立"}],"answer":["A","B","C"],"explanation":"D 项错：名义减通胀只是近似，通胀率较高时必须用 (1 + 名义) ÷ (1 + 通胀) − 1。A、B 是 EAR 的单调性与连续复利极限，C 是费雪效应的基本结论。"},{"id":"B-12","vol":"B","no":12,"type":"multi","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于投资组合的风险与报酬，下列说法正确的有（　　）。","options":[{"key":"A","text":"组合期望报酬率等于各证券期望报酬率的加权平均数"},{"key":"B","text":"组合标准差等于各证券标准差的加权平均数"},{"key":"C","text":"相关系数越小，分散风险的效果越明显"},{"key":"D","text":"协方差为正，说明两种证券报酬率同向变动"}],"answer":["A","C","D"],"explanation":"B 项只有在 ρ = +1 时才成立；一般情况下组合标准差小于加权平均数，这正是分散投资的效应，不能把“加权平均”当成组合风险的一般算法。"},{"id":"B-13","vol":"B","no":13,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某项目建设期 2 年，从第 3 年年末开始每年年末取得净收益 30,000 元，连续 5 年（第 3—7 年），折现率 8%。已知 (P/A,8%,5)=3.992710、(P/F,8%,2)=0.857339、(P/A,8%,7)=5.206370、(P/A,8%,2)=1.783265。","asks":[{"no":1,"text":"（1）用“先折年金现值、再折递延期”的方法计算现值；"},{"no":2,"text":"（2）用“两期年金现值系数相减”的方法验算；"},{"no":3,"text":"（3）若从第 8 年起改为每年年末永续取得 30,000 元，计算该永续年金在第 7 年年末的价值及其折现到第 0 年的现值。"}],"solution":{"steps":[{"title":"（1）先折年金现值、再折递延期","lines":["PV = A × (P/A, 8%, 5) × (P/F, 8%, 2) = 30,000 × 3.992710 × 0.857339 ≈ 102,693.16（元）"]},{"title":"（2）两期年金现值系数相减验算","lines":["PV = A × [(P/A, 8%, 7) − (P/A, 8%, 2)] = 30,000 × (5.206370 − 1.783265)","= 30,000 × 3.423105 ≈ 102,693.16（元）"]},{"title":"（3）永续年金的价值","lines":["第 7 年年末价值 = A ÷ i = 30,000 ÷ 8% = 375,000.00（元）","PV = 375,000.00 × (P/F, 8%, 7) = 375,000.00 × 0.583490 ≈ 218,808.90（元）"]}],"conclusion":"结论：递延年金现值为 102,693.16 元，两种方法结果一致；第 8 年起永续收益在第 0 年的现值为 218,808.90 元。","pitfall":"易错提示：递延期是 2 年而不是 3 年——第 3 年年末的收益折到“第 2 年年末”只需折 2 期，多折或少折一期都会使结果相差一个 (1 + 8%)。永续年金的 A ÷ i 算的是“第一期收付前一期”的价值，本题第一期在第 8 年年末，故 375,000 元落在第 7 年年末，不能直接当作第 0 年的现值。"}},{"id":"B-14","vol":"B","no":14,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某企业投资 200,000 元购置设备，预计每年年末可增加净现金流量 50,000 元，持续 6 年。","asks":[{"no":1,"text":"（1）用插值法计算该投资的内含报酬率（已知 (P/A,12%,6)=4.111407，(P/A,13%,6)=3.997550）；"},{"no":2,"text":"（2）若企业要求的最低报酬率为 12%，判断该投资是否可行；"},{"no":3,"text":"（3）若折现率确定为 10%，用插值法求收回全部投资所需年数（已知 (P/A,10%,5)=3.790787，(P/A,10%,6)=4.355261）。"}],"solution":{"steps":[{"title":"（1）求内含报酬率","lines":["令 200,000 = 50,000 × (P/A, i, 6)，即 (P/A, i, 6) = 4.000000","i = 12% + [(4.111407 − 4.000000) ÷ (4.111407 − 3.997550)] × (13% − 12%)","= 12% + (0.111407 ÷ 0.113857) × 1% = 12% + 0.98% = 12.98%"]},{"title":"（2）可行性判断","lines":["12.98% > 12%，投资可行，可获得约 0.98 个百分点的超额报酬。"]},{"title":"（3）按 10% 折现求回收年数","lines":["令 (P/A, 10%, n) = 4.000000","n = 5 + [(4.000000 − 3.790787) ÷ (4.355261 − 3.790787)] × (6 − 5)","= 5 + (0.209213 ÷ 0.564474) = 5.37（年）"]}],"conclusion":"结论：内含报酬率约 12.98%，高于 12% 的最低要求，方案可行；按 10% 折现约 5.37 年可收回全部投资。","pitfall":"易错提示：插值的分子分母必须同向：分子是目标系数与低利率对应系数之差，分母是两个系数之差，比例再乘利率区间。把 4.111407 与 3.997550 的位置颠倒会得到 12.02% 的错误结果；第（3）问的区间宽度是 6 − 5 = 1 年，不要写成 5 或 10。"}},{"id":"B-15","vol":"B","no":15,"type":"calc","score":10,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某银行住房贷款名义年利率 5.4%，按月计息；另一家银行报价 5.5%，按年计息。","asks":[{"no":1,"text":"（1）计算第一家银行的实际年利率（EAR）；"},{"no":2,"text":"（2）若通货膨胀率为 2.2%，按费雪效应精确式计算第一家银行贷款的实际利率，并与“名义减通胀”的近似值比较；"},{"no":3,"text":"（3）仅从实际成本角度，判断哪家银行的贷款更便宜。"}],"solution":{"steps":[{"title":"（1）第一家银行的实际年利率","lines":["EAR = (1 + 5.4% ÷ 12)^12 − 1 = 1.0045^12 − 1 = 5.54%"]},{"title":"（2）实际利率（精确式与近似值）","lines":["实际利率 = (1 + 5.5357%) ÷ (1 + 2.2%) − 1 = 1.055357 ÷ 1.022 − 1 = 3.26%","近似值 = 5.54% − 2.2% = 3.34%，高估约 0.08 个百分点"]},{"title":"（3）两家银行比较","lines":["第一家实际年利率 5.5357%，第二家 5.50%，第一家实际成本更高，第二家（5.5% 按年计息）更便宜。"]}],"conclusion":"结论：名义利率 5.4% 按月计息的实际年利率为 5.54%，反高于按年计息的 5.5%；贷款比价必须以实际年利率为准。","pitfall":"易错提示：名义利率低不等于实际成本低，必须先把不同计息方式统一折算为 EAR；费雪精确式是“相除”不是“相减”，通胀越高两者差距越大，不能把 5.4% − 2.2% 当作实际利率。"}},{"id":"B-16","vol":"B","no":16,"type":"calc","score":10,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"某公司有两个互斥投资项目，报酬率及概率分布为：甲项目 0.25 概率得 30%、0.5 概率得 15%、0.25 概率得 0；乙项目 0.25 概率得 40%、0.5 概率得 15%、0.25 概率得 −10%。无风险报酬率 4%，风险报酬系数 b = 0.12。","asks":[{"no":1,"text":"（1）分别计算两项目的期望报酬率；"},{"no":2,"text":"（2）分别计算标准差与标准离差率；"},{"no":3,"text":"（3）分别计算风险报酬率与必要报酬率；"},{"no":4,"text":"（4）比较两项目风险大小并作出选择。"}],"solution":{"steps":[{"title":"（1）期望报酬率","lines":["E(R甲) = 0.25 × 30% + 0.5 × 15% + 0.25 × 0 = 15.00%","E(R乙) = 0.25 × 40% + 0.5 × 15% + 0.25 × (−10%) = 15.00%"]},{"title":"（2）标准差与标准离差率","lines":["σ甲 = [0.25 × (15%)^2 + 0.5 × 0 + 0.25 × (−15%)^2]^(1/2) = (0.011250)^(1/2) = 10.61%","σ乙 = [0.25 × (25%)^2 + 0.5 × 0 + 0.25 × (−25%)^2]^(1/2) = (0.031250)^(1/2) = 17.68%","V甲 = 10.61% ÷ 15.00% = 70.71%；V乙 = 17.68% ÷ 15.00% = 117.85%"]},{"title":"（3）风险报酬率与必要报酬率","lines":["RR甲 = 0.12 × 70.71% = 8.49%，R甲 = 4% + 8.49% = 12.49%","RR乙 = 0.12 × 117.85% = 14.14%，R乙 = 4% + 14.14% = 18.14%"]},{"title":"（4）比较与选择","lines":["E(R甲) = 15.00% > 12.49%，甲可行；E(R乙) = 15.00% < 18.14%，乙不可行。甲风险小、必要报酬率低，在两项目期望报酬率相同时应选甲。"]}],"conclusion":"结论：甲项目标准差 10.61%、标准离差率 70.71%、必要报酬率 12.49%，可行；乙项目标准差 17.68%、标准离差率 117.85%、必要报酬率 18.14%，不可行。选甲。","pitfall":"易错提示：两项目期望报酬率相同，此处标准差可比；一旦期望值不同，必须改用标准离差率。另注意 σ 的离差是对各自的期望值计算的，乙的离差为 +25% 与 −25%，不是 ±15%；遗漏概率权重会把方差算大。"}},{"id":"C-1","vol":"C","no":1,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"下列关于资金时间价值与等值的表述，正确的是（　　）。","options":[{"key":"A","text":"两笔金额相等的资金，只要利率相同，其价值必然相等"},{"key":"B","text":"资金等值是指不同时点的两笔资金在一定利率下具有相同的价值，与所折算的时点选择无关"},{"key":"C","text":"同一笔资金，折现率越高，其现值越大"},{"key":"D","text":"资金时间价值只能用相对数表示"}],"answer":["B"],"explanation":"A 项忽略时点差异；C 项折现率越高现值越小；D 项时间价值有相对数（时间价值率）与绝对数（时间价值额）两种表示。B 项点明“等值”是同一利率下的换算关系，折算到哪个时点不影响两笔资金是否等值。"},{"id":"C-2","vol":"C","no":2,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某项现金流量为：第 1 年年初投入 100 万元，第 2 年至第 6 年每年年末各流入 40 万元，折现率 10%。现金流入量在第 1 年年初的现值为（　　）万元。","options":[{"key":"A","text":"40 × (P/A, 10%, 5)"},{"key":"B","text":"40 × (P/A, 10%, 5) × (P/F, 10%, 1)"},{"key":"C","text":"40 × (P/A, 10%, 5) × (F/P, 10%, 1)"},{"key":"D","text":"40 × (P/A, 10%, 6)"}],"answer":["B"],"explanation":"流入发生在第 2—6 年年末，相对第 1 年年初递延 1 期：先用 5 期年金现值系数折到第 1 年年末，再折 1 期到第 1 年年初。A 项只折到第 1 年年末；C 项把折现做成了复利；D 项多算一期。"},{"id":"C-3","vol":"C","no":3,"type":"single","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于永续年金现值 PV = A ÷ i 的敏感性，下列说法正确的是（　　）。","options":[{"key":"A","text":"i 下降 1 个百分点使现值上升的幅度，大于 i 上升 1 个百分点使现值下降的幅度"},{"key":"B","text":"现值与 i 成正比"},{"key":"C","text":"i 趋近于 0 时，现值也趋近于 0"},{"key":"D","text":"永续年金现值与年金数额无关"}],"answer":["A"],"explanation":"以 A = 1,000 元为例：i 由 8% 降至 7%，现值由 12,500 元升至 14,285.71 元（+14.29%）；i 由 8% 升至 9%，现值降至 11,111.11 元（−11.11%）。升降幅度不对称，源于 PV 与 i 成反比的双曲线关系。B、C、D 均与公式矛盾。"},{"id":"C-4","vol":"C","no":4,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某投资者要求 5% 的实际收益率，预计通货膨胀率为 3%，则其应要求的名义收益率（按费雪精确式）为（　　）。","options":[{"key":"A","text":"8.00%"},{"key":"B","text":"8.15%"},{"key":"C","text":"1.94%"},{"key":"D","text":"2.00%"}],"answer":["B"],"explanation":"(1 + 5%) × (1 + 3%) − 1 = 8.15%。A 项为 5% + 3% 的近似；C 项把方向算成 (1.05 ÷ 1.03) − 1 = 1.94%；D 项误用 5% − 3%。"},{"id":"C-5","vol":"C","no":5,"type":"single","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"名义年利率为 6%，按连续复利计息，则实际年利率为（　　）。","options":[{"key":"A","text":"6.00%"},{"key":"B","text":"6.09%"},{"key":"C","text":"6.18%"},{"key":"D","text":"6.14%"}],"answer":["C"],"explanation":"EAR = e^0.06 − 1 = 6.18%。A 项为单利口径；B 项为按半年复利 (1.03^2 − 1 = 6.09%)；D 项为按季复利 (1.015^4 − 1 = 6.14%)。连续复利是计息次数趋于无穷的极限，实际年利率最高。"},{"id":"C-6","vol":"C","no":6,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于系统风险与 β 系数，下列说法正确的是（　　）。","options":[{"key":"A","text":"系统风险可以通过增加所持证券的种类予以分散"},{"key":"B","text":"β 系数衡量系统风险，组合的 β 等于各证券 β 的加权平均数"},{"key":"C","text":"β 系数衡量的是可以通过投资组合分散掉的那部分风险"},{"key":"D","text":"市场组合的 β 系数等于 0"}],"answer":["B"],"explanation":"A 项系统风险不可分散；C 项说反，β 衡量的是不可分散的系统风险；D 项市场组合的 β 等于 1，不是 0。B 项既点明 β 的含义，又给出组合 β 的加权算法。"},{"id":"C-7","vol":"C","no":7,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"若组合中两种证券报酬率的协方差为负值，则（　　）。","options":[{"key":"A","text":"两种证券报酬率反向变动，组合风险可能低于两种证券中风险较低者"},{"key":"B","text":"两种证券的相关系数等于 1"},{"key":"C","text":"组合标准差一定等于零"},{"key":"D","text":"组合期望报酬率一定低于两种证券中较低者"}],"answer":["A"],"explanation":"B 项负协方差对应负相关；C 项只有 ρ = −1 且权重满足 w1σ1 = w2σ2 时标准差才为零；D 项组合期望报酬率是加权平均数，必介于两者之间。A 项正确，负相关使组合风险被部分抵消，甚至低于两者中风险较低者。"},{"id":"C-8","vol":"C","no":8,"type":"single","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"某项目的标准离差率由 40% 上升到 60%，无风险报酬率与风险报酬系数不变，则（　　）。","options":[{"key":"A","text":"必要报酬率上升，上升幅度等于 b × 20%"},{"key":"B","text":"必要报酬率不变"},{"key":"C","text":"风险报酬率下降"},{"key":"D","text":"必要报酬率上升，上升幅度等于 20%"}],"answer":["A"],"explanation":"R = Rf + b·V，ΔR = b × (60% − 40%) = b × 20%，即上升 b × 0.20 个百分点。D 项忽略了风险报酬系数 b，把 V 的增幅直接当成 R 的增幅；B、C 项与公式矛盾。"},{"id":"C-9","vol":"C","no":9,"type":"multi","score":5,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"关于资金时间价值的计算，下列说法正确的有（　　）。","options":[{"key":"A","text":"复利终值与复利现值互为逆运算，其系数互为倒数"},{"key":"B","text":"名义利率相同而计息期数不同时，实际年利率不同"},{"key":"C","text":"利率与期数相同时，预付年金现值大于普通年金现值"},{"key":"D","text":"单利计息下，各期利息也参与计息"}],"answer":["A","B","C"],"explanation":"D 项错：单利只对本金计息，各期利息不并入本金。B 项的差异来自一年内复利次数不同；C 项因为预付年金每期都提前一年收付。"},{"id":"C-10","vol":"C","no":10,"type":"multi","score":5,"kp":"2.2","kpLabel":"2.2 利息率","stem":"关于利率与通货膨胀，下列说法正确的有（　　）。","options":[{"key":"A","text":"预期通货膨胀率上升，名义利率趋于上升"},{"key":"B","text":"实际利率为负时，债权人利益受损、债务人受益"},{"key":"C","text":"费雪效应描述了名义利率与预期通货膨胀率之间的关系"},{"key":"D","text":"通货膨胀补偿属于风险报酬的组成部分"}],"answer":["A","B","C"],"explanation":"D 项错：利率 = 纯利率 + 通货膨胀补偿 + 风险报酬，通胀补偿与风险报酬是并列的两块，不能并入风险报酬。B 项中实际利率为负意味着债权人收回本息的购买力下降。"},{"id":"C-11","vol":"C","no":11,"type":"multi","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于投资组合，下列说法正确的有（　　）。","options":[{"key":"A","text":"只要相关系数小于 1，组合标准差就小于各证券标准差的加权平均数"},{"key":"B","text":"组合的 β 系数等于各证券 β 系数的加权平均数"},{"key":"C","text":"协方差等于相关系数乘以两证券标准差之积"},{"key":"D","text":"两种证券完全负相关时，无论权重如何，组合标准差都为零"}],"answer":["A","B","C"],"explanation":"D 项错：完全负相关只在权重满足 w1σ1 = w2σ2 时标准差才为零，其他权重下仍大于零。A 项是分散效应的数学表述，B、C 分别是组合 β 与协方差的定义式。"},{"id":"C-12","vol":"C","no":12,"type":"multi","score":5,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"关于风险与报酬的关系，下列说法正确的有（　　）。","options":[{"key":"A","text":"风险报酬是投资者因承担风险而要求获得的、超过时间价值的那部分额外报酬"},{"key":"B","text":"标准离差率可用于比较期望报酬率不同的项目的风险大小"},{"key":"C","text":"标准差越大风险越大，因此可直接用标准差比较任何项目的风险"},{"key":"D","text":"必要报酬率等于无风险报酬率加风险报酬率"}],"answer":["A","B","D"],"explanation":"C 项错：标准差是绝对数指标，只在期望值相同时可直接比较，期望值不同时必须用标准离差率。A、B、D 分别是风险报酬的定义、V 的用途与必要报酬率的构成。"},{"id":"C-13","vol":"C","no":13,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某家庭购房向银行贷款 1,200,000 元，期限 20 年（240 期），名义年利率 4.8%，按月等额本息还款。","asks":[{"no":1,"text":"（1）写出月利率与还款期数；"},{"no":2,"text":"（2）计算每月还款额（资本回收额）；"},{"no":3,"text":"（3）计算该贷款的实际年利率（EAR）；"},{"no":4,"text":"（4）若利率上浮至 5.4%（仍按月计息），每月还款额增加多少？"}],"solution":{"steps":[{"title":"（1）月利率与期数","lines":["i = 4.8% ÷ 12 = 0.4%；n = 20 × 12 = 240（期）"]},{"title":"（2）每月还款额","lines":["A = PV × i ÷ [1 − (1 + i)^(−n)] = 1,200,000 × 0.4% ÷ [1 − (1 + 0.4%)^(−240)]","= 4,800 ÷ (1 − 0.383627) = 4,800 ÷ 0.616373 = 7,787.49（元）"]},{"title":"（3）实际年利率","lines":["EAR = (1 + 0.4%)^12 − 1 = 4.9070% ≈ 4.91%"]},{"title":"（4）利率上浮后的月供","lines":["i = 5.4% ÷ 12 = 0.45%","A = 1,200,000 × 0.45% ÷ [1 − (1 + 0.45%)^(−240)] = 5,400 ÷ 0.659518 = 8,187.02（元）","增加额 = 8,187.02 − 7,787.49 = 399.53（元），增幅 5.13%"]}],"conclusion":"结论：月供 7,787.49 元，实际年利率 4.91%；利率上浮 0.6 个百分点后月供增至 8,187.02 元，每月多还 399.53 元。","pitfall":"易错提示：月供公式的分母是 1 − (1 + i)^(−n)，负号不能漏；若写成 (1 + i)^n − 1 那是偿债基金系数。年利率必须先除以 12 换成月利率，期数用 240 而不是 20。"}},{"id":"C-14","vol":"C","no":14,"type":"calc","score":10,"kp":"2.1","kpLabel":"2.1 资金的时间价值","stem":"某公司拟购建一条生产线，初始投资 300,000 元（第 0 年），建设期 2 年，第 3 年年末投产，预计第 3—8 年每年年末产生净现金流入 80,000 元，折现率 9%。","asks":[{"no":1,"text":"（1）用“先折年金现值、再折递延期”计算现金流入现值；"},{"no":2,"text":"（2）用“两期年金现值系数相减”验算，并计算净现值、判断项目是否可行；"},{"no":3,"text":"（3）若现金流入改为每年年初取得（第 3 年年初起），现值与净现值为多少？"}],"solution":{"steps":[{"title":"（1）现金流入现值","lines":["PV = 80,000 × (P/A, 9%, 6) × (P/F, 9%, 2) = 80,000 × 4.485919 × 0.841680 ≈ 302,056.63（元）"]},{"title":"（2）验算与净现值","lines":["PV = 80,000 × [(P/A, 9%, 8) − (P/A, 9%, 2)] = 80,000 × (5.534819 − 1.759111)","= 80,000 × 3.775708 ≈ 302,056.64（元），与上一法一致","NPV = 302,056.63 − 300,000 = 2,056.63（元）> 0","净现值为正，项目可行；但仅 2,056.63 元，安全边际很小，对折现率与现金流预测的偏差十分敏感。"]},{"title":"（3）年初取得现金流入","lines":["PV = 302,056.63 × (1 + 9%) = 329,241.73（元）","NPV = 329,241.73 − 300,000 = 29,241.73（元）"]}],"conclusion":"结论：年末收款时现值 302,056.63 元、净现值 2,056.63 元，勉强可行；改为年初收款后每笔提前一年，现值升至 329,241.73 元、净现值 29,241.73 元，可行性明显改善。","pitfall":"易错提示：递延期是 2 年（第 3 年年末的流入折到第 2 年年末），不是 3 年；第（3）问只调整一次 (1 + 9%)，不要再改期数或再加一次递延。两法相差 0.01 元系系数取整所致，作答时说明即可。"}},{"id":"C-15","vol":"C","no":15,"type":"calc","score":10,"kp":"2.2","kpLabel":"2.2 利息率","stem":"某公司无风险报酬率（名义）为 4%，预计通货膨胀率 2.5%。公司拟投资一项目，经测算其标准离差率 V = 50%，风险报酬系数 b = 0.10。","asks":[{"no":1,"text":"（1）按费雪精确式计算无风险实际报酬率；"},{"no":2,"text":"（2）计算该项目的风险报酬率；"},{"no":3,"text":"（3）计算项目的必要报酬率；"},{"no":4,"text":"（4）若项目期望报酬率为 8.5%，判断是否应投资。"}],"solution":{"steps":[{"title":"（1）无风险实际报酬率","lines":["实际报酬率 = (1 + 4%) ÷ (1 + 2.5%) − 1 = 1.014634 − 1 = 1.46%"]},{"title":"（2）风险报酬率","lines":["RR = b × V = 0.10 × 50% = 5.00%"]},{"title":"（3）必要报酬率","lines":["R = Rf + b × V = 4% + 5.00% = 9.00%"]},{"title":"（4）投资判断","lines":["8.50% < 9.00%，期望报酬率低于必要报酬率，不应投资（差 0.5 个百分点）。"]}],"conclusion":"结论：无风险实际报酬率 1.46%，风险报酬率 5.00%，必要报酬率 9.00%；项目期望报酬率 8.50% 不足以补偿风险，方案不可行。","pitfall":"易错提示：必要报酬率公式中的 Rf 用的是名义无风险报酬率，与风险报酬率同口径相加；不能把 1.46% 的实际无风险报酬率直接代入后与名义期望报酬率比较，否则口径不一致。"}},{"id":"C-16","vol":"C","no":16,"type":"calc","score":10,"kp":"2.3","kpLabel":"2.3 投资的风险价值","stem":"某基金组合由 A、B 两只基金构成，投资比重分别为 60% 和 40%。已知：A 的期望报酬率 12%、标准差 18%、β = 1.30；B 的期望报酬率 8%、标准差 10%、β = 0.70；两者报酬率的相关系数 ρ = 0.30。","asks":[{"no":1,"text":"（1）计算组合期望报酬率；"},{"no":2,"text":"（2）计算两基金的协方差；"},{"no":3,"text":"（3）计算组合标准差；"},{"no":4,"text":"（4）计算组合 β 系数；"},{"no":5,"text":"（5）若改为各占 50%，组合期望报酬率与标准差如何变化？"}],"solution":{"steps":[{"title":"（1）组合期望报酬率","lines":["E(Rp) = 0.6 × 12% + 0.4 × 8% = 10.40%"]},{"title":"（2）协方差","lines":["Cov(A,B) = ρ × σA × σB = 0.30 × 18% × 10% = 0.0054（即 54(%²)）"]},{"title":"（3）组合标准差","lines":["σp = [0.6^2 × 18%^2 + 0.4^2 × 10%^2 + 2 × 0.6 × 0.4 × 0.0054]^(1/2)","= (0.011664 + 0.001600 + 0.002592)^(1/2) = (0.015856)^(1/2) = 12.59%"]},{"title":"（4）组合 β 系数","lines":["βp = 0.6 × 1.30 + 0.4 × 0.70 = 0.78 + 0.28 = 1.06"]},{"title":"（5）权重改为各占 50%","lines":["E(Rp) = 0.5 × 12% + 0.5 × 8% = 10.00%","σp = (0.25 × 0.0324 + 0.25 × 0.01 + 2 × 0.25 × 0.0054)^(1/2) = (0.013300)^(1/2) = 11.53%","标准差由 12.59% 降至 11.53%，期望报酬率由 10.40% 降至 10.00%：降低高报酬、高风险基金的比重，风险与报酬同向下降。"]}],"conclusion":"结论：组合期望报酬率 10.40%，协方差 0.0054，标准差 12.59%，β 为 1.06；改为 50%∶50% 后期望报酬率 10.00%、标准差 11.53%，风险下降 1.06 个百分点。","pitfall":"易错提示：组合标准差不是 0.6 × 18% + 0.4 × 10% = 14.80%，那只在 ρ = 1 时成立；协方差的量纲是“百分数的平方”，与标准差同用小数或同用百分数代入，混用会使结果差 100 倍。"}}]};
+
+</script>
+<script>
+/* ==========================================================================
+   《财务管理（第5版）》第 2 章 2.1—2.3 在线练习 — 交互逻辑
+   纯原生 JS，无依赖；file:// 双击即可运行。
+   题库来自 quiz-data.js（window.QUIZ_DATA），内容逐字取自 Word 版。
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  var DATA = window.QUIZ_DATA;
+  var STORE = 'finquiz.v1';
+  var LIMITS = { A: 90 * 60, B: 90 * 60, C: 90 * 60, ALL: 270 * 60 };
+  var SELF_SCORE = { full: 10, partial: 5, none: 0 };
+  var KP_ORDER = ['2.1', '2.2', '2.3'];
+
+  if (!DATA || !DATA.questions) {
+    document.getElementById('questionList').innerHTML =
+      '<div class="empty-state">题库未加载：请确认 quiz-data.js 与本页在同一目录。</div>';
+    return;
+  }
+
+  var ALL = DATA.questions;
+  var QMAP = {};
+  ALL.forEach(function (q) { QMAP[q.id] = q; });
+
+  /* ---------------- 状态 ---------------- */
+  function blankSession() {
+    return { answers: {}, eval: {}, submitted: false, elapsed: 0, running: true, wrongOnly: false };
+  }
+  var state = { theme: 'light', mode: 'single', vol: 'A', sessions: {} };
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(STORE);
+      if (!raw) return;
+      var saved = JSON.parse(raw);
+      if (saved && typeof saved === 'object') {
+        state.theme = saved.theme === 'dark' ? 'dark' : 'light';
+        state.mode = saved.mode === 'all' ? 'all' : 'single';
+        state.vol = ['A', 'B', 'C'].indexOf(saved.vol) >= 0 ? saved.vol : 'A';
+        state.sessions = saved.sessions && typeof saved.sessions === 'object' ? saved.sessions : {};
+      }
+    } catch (e) { /* localStorage 不可用时静默降级 */ }
+  }
+
+  var saveTimer = null;
+  function save() {
+    if (saveTimer) clearTimeout(saveTimer);
+    saveTimer = setTimeout(writeNow, 150);
+  }
+  function writeNow() {
+    saveTimer = null;
+    try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* ignore */ }
+  }
+
+  function sessionKey() { return state.mode === 'all' ? 'ALL' : state.vol; }
+  function session() {
+    var k = sessionKey();
+    if (!state.sessions[k]) state.sessions[k] = blankSession();
+    var s = state.sessions[k];
+    if (!s.answers) s.answers = {};
+    if (!s.eval) s.eval = {};
+    if (typeof s.elapsed !== 'number') s.elapsed = 0;
+    if (typeof s.running !== 'boolean') s.running = true;
+    if (typeof s.submitted !== 'boolean') s.submitted = false;
+    if (typeof s.wrongOnly !== 'boolean') s.wrongOnly = false;
+    return s;
+  }
+  function questions() {
+    return state.mode === 'all' ? ALL : ALL.filter(function (q) { return q.vol === state.vol; });
+  }
+  function limitOf(key) { return LIMITS[key] || LIMITS.A; }
+
+  /* ---------------- 工具 ---------------- */
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function mmss(sec) {
+    sec = Math.max(0, Math.floor(sec));
+    var m = Math.floor(sec / 60), s = sec % 60;
+    return m + ':' + pad2(s);
+  }
+  function clockText(sec) {
+    sec = Math.max(0, Math.floor(sec));
+    var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+    return (h > 0 ? h + ':' + pad2(m) : pad2(m)) + ':' + pad2(s);
+  }
+  function isChoice(q) { return q.type === 'single' || q.type === 'multi'; }
+  function typeName(q) { return q.type === 'single' ? '单项选择' : q.type === 'multi' ? '多项选择' : '计算分析'; }
+  function volName(v) { return DATA.meta.volumeNames[v] || v; }
+  function hasText(s) { return typeof s === 'string' && s.trim().length > 0; }
+
+  /* ---------------- 判定 ---------------- */
+  function verdict(q) {
+    var sel = session().answers[q.id] || [];
+    var ans = q.answer;
+    var allIn = ans.every(function (a) { return sel.indexOf(a) >= 0; });
+    if (allIn && sel.length === ans.length) return 'correct';
+    if (sel.length && sel.every(function (s) { return ans.indexOf(s) >= 0; })) return 'partial';
+    return sel.length ? 'wrong' : 'empty';
+  }
+  function choiceEarned(q) { return verdict(q) === 'correct' ? q.score : 0; }
+  function calcEarned(q) {
+    var e = session().eval[q.id];
+    return typeof SELF_SCORE[e] === 'number' ? SELF_SCORE[e] : 0;
+  }
+  function earned(q) { return isChoice(q) ? choiceEarned(q) : calcEarned(q); }
+
+  function totals() {
+    var qs = questions(), max = 0, score = 0;
+    var kp = {}, choiceTotal = 0, choiceCorrect = 0, calcTotal = 0, calcFull = 0, done = 0;
+    KP_ORDER.forEach(function (k) { kp[k] = { got: 0, max: 0 }; });
+    qs.forEach(function (q) {
+      max += q.score;
+      var got = earned(q);
+      score += got;
+      kp[q.kp].max += q.score;
+      kp[q.kp].got += got;
+      if (isChoice(q)) {
+        choiceTotal++;
+        if (verdict(q) === 'correct') choiceCorrect++;
+        if ((session().answers[q.id] || []).length) done++;
+      } else {
+        calcTotal++;
+        if (session().eval[q.id] === 'full') calcFull++;
+        if (hasText(session().answers[q.id])) done++;
+      }
+    });
+    return {
+      max: max, score: score, kp: kp,
+      choiceTotal: choiceTotal, choiceCorrect: choiceCorrect,
+      calcTotal: calcTotal, calcFull: calcFull,
+      done: done, total: qs.length
+    };
+  }
+
+  function bandOf(pct) {
+    if (pct < 60) {
+      return {
+        tag: '＜60 分 · 回看讲义对应节',
+        text: '基础未过关。先回看讲义 2.1、2.2、2.3 对应节，重读概念与例题，再做本卷单选题与多项选择题；' +
+              '2.1 重点补系数与年金分类，2.2 重点补实际利率与费雪效应，2.3 重点补标准差与标准离差率。'
+      };
+    }
+    if (pct <= 80) {
+      return {
+        tag: '60—80 分 · 重做错题',
+        text: '基本掌握，细节失分。重做本卷全部错题，并逐条对照「易错提示」自查；' +
+              '计算题从公式到结论完整重算一遍，重点检查单位换算（月利率、百分数）与期数（递延期、预付年金）。'
+      };
+    }
+    return {
+      tag: '＞80 分 · 可进入 2.4 资本市场均衡模型',
+      text: '掌握较好，可进入 2.4 资本市场均衡模型学习（CAPM、证券市场线、β 与风险溢酬），' +
+            '并尝试用 C 卷的基金组合题检验组合风险的计算。'
+    };
+  }
+
+  /* ---------------- 渲染：题卡 ---------------- */
+  function chip(q, showVol) {
+    var html = '<span class="tag score">' + q.score + ' 分</span>' +
+      '<span class="tag kp">' + esc(q.kpLabel || DATA.meta.kpLabels[q.kp]) + '</span>' +
+      '<span class="tag">' + typeName(q) + '</span>';
+    if (showVol) html += '<span class="tag vol">' + esc(volName(q.vol)) + '</span>';
+    return html;
+  }
+
+  function statusHTML(q) {
+    var v = verdict(q);
+    var map = {
+      correct: ['ok', '✓ 答对　+' + q.score + ' 分'],
+      partial: ['part', '◐ 漏选　0 分'],
+      wrong: ['bad', '✗ 答错　0 分'],
+      empty: ['none', '— 未作答　0 分']
+    };
+    var m = map[v];
+    return '<span class="qstatus ' + m[0] + '">' + m[1] + '</span>';
+  }
+
+  function optionsHTML(q) {
+    var s = session();
+    var sel = s.answers[q.id] || [];
+    var ans = q.answer;
+    var inputType = q.type === 'single' ? 'radio' : 'checkbox';
+    return '<div class="options">' + q.options.map(function (o) {
+      var cls = ['opt'], flag = '';
+      var checked = sel.indexOf(o.key) >= 0;
+      if (checked) cls.push('is-checked');
+      if (s.submitted) {
+        cls.push('is-locked');
+        if (ans.indexOf(o.key) >= 0) {
+          if (checked) { cls.push('is-correct'); flag = '✔'; }
+          else { cls.push('is-missed'); flag = '漏选'; }
+        } else if (checked) {
+          cls.push('is-wrong'); flag = '✘';
+        } else {
+          cls.push('is-dim');
+        }
+      }
+      return '<label class="' + cls.join(' ') + '" data-opt="' + o.key + '">' +
+        '<input type="' + inputType + '" name="q-' + q.id + '" value="' + o.key + '"' +
+        (checked ? ' checked' : '') + (s.submitted ? ' disabled' : '') + '>' +
+        '<span class="opt-key">' + o.key + '</span>' +
+        '<span class="opt-text">' + esc(o.text) + '</span>' +
+        '<span class="opt-flag">' + flag + '</span>' +
+        '</label>';
+    }).join('') + '</div>';
+  }
+
+  function analysisHTML(q) {
+    if (!session().submitted) return '';
+    return '<div class="analysis">' +
+      '<div class="analysis-title">解析<span class="analysis-ans">正确答案：' + q.answer.join('') + '</span></div>' +
+      '<p>' + esc(q.explanation) + '</p>' +
+      '</div>';
+  }
+
+  function calcHTML(q) {
+    var s = session();
+    var val = s.answers[q.id] || '';
+    var ev = s.eval[q.id] || '';
+    var evalBtns = [['full', '已答对'], ['partial', '部分对'], ['none', '未答对']].map(function (p) {
+      return '<button type="button" class="eval-btn' + (ev === p[0] ? ' is-on' : '') +
+        '" data-eval="' + p[0] + '" aria-pressed="' + (ev === p[0]) + '">' + p[1] + '</button>';
+    }).join('');
+    var sol = q.solution;
+    var steps = sol.steps.map(function (st) {
+      return '<div class="sol-step">' +
+        (st.title ? '<div class="sol-step-title">' + esc(st.title) + '</div>' : '') +
+        st.lines.map(function (line) { return '<div class="sol-line">' + esc(line) + '</div>'; }).join('') +
+        '</div>';
+    }).join('');
+
+    return '<div class="asks">' + q.asks.map(function (a) {
+        return '<li>' + esc(a.text) + '</li>';
+      }).join('') + '</div>' +
+      '<div class="calc-area">' +
+        '<div class="calc-label"><span>我的思路 / 解答（自动保存到本机浏览器）</span>' +
+          '<span class="calc-saved" data-saved="' + q.id + '">已保存</span></div>' +
+        '<textarea class="calc-input" data-qid="' + q.id + '" rows="5" ' +
+          'placeholder="按「公式 → 代入 → 结果 → 结论」分步书写，提交后可与标准解答逐行对照……"' +
+          (s.submitted ? ' disabled' : '') + '>' + esc(val) + '</textarea>' +
+      '</div>' +
+      '<div class="selfeval">' +
+        '<span class="selfeval-label">自评（提交后计入总分）：</span>' +
+        '<div class="selfeval-btns">' + evalBtns + '</div>' +
+        '<span class="eval-score">分值 ' + q.score + ' 分：答对 ' + q.score + ' / 部分对 5 / 未答对 0</span>' +
+      '</div>' +
+      '<details class="solution">' +
+        '<summary>查看标准解答（公式 → 代入 → 结果 → 结论）</summary>' +
+        '<div class="solution-body">' +
+          '<p class="sol-legend">以下按 Word 版参考答案原文逐行呈现。</p>' +
+          steps +
+          (sol.conclusion ? '<div class="sol-conclusion">' + esc(sol.conclusion) + '</div>' : '') +
+          (sol.pitfall ? '<div class="sol-pitfall">' + esc(sol.pitfall) + '</div>' : '') +
+        '</div>' +
+      '</details>';
+  }
+
+  function calcStatusHTML(q) {
+    var ev = session().eval[q.id];
+    var cls = ev === 'full' ? 'ok' : ev === 'partial' ? 'part' : ev === 'none' ? 'bad' : 'none';
+    var label = ev === 'full' ? '✓ 已答对' : ev === 'partial' ? '◐ 部分对' : ev === 'none' ? '✗ 未答对' : '— 未自评';
+    return '<span class="qstatus ' + cls + '">' + label + '　+' + calcEarned(q) + ' 分</span>';
+  }
+
+  function cardHTML(q) {
+    var s = session();
+    var status = s.submitted ? (isChoice(q) ? statusHTML(q) : calcStatusHTML(q)) : '';
+    var noLabel = state.mode === 'all' ? (q.vol + ' 卷第 ' + q.no + ' 题') : ('第 ' + q.no + ' 题');
+    var head = '<div class="qhead"><span class="qno">' + noLabel + '</span>' +
+      '<div class="qtags">' + chip(q, false) + '</div>' + status + '</div>';
+    var body;
+    if (isChoice(q)) {
+      body = '<p class="qstem">' + esc(q.stem) + '</p>' + optionsHTML(q) + analysisHTML(q);
+    } else {
+      body = '<p class="qstem">' + esc(q.stem) + '</p>' + calcHTML(q);
+    }
+    return '<article class="qcard" data-qid="' + q.id + '" data-type="' + q.type + '" id="card-' + q.id + '">' +
+      head + body + '</article>';
+  }
+
+  /* ---------------- 渲染：列表 ---------------- */
+  var currentQid = null;
+
+  function visibleQuestions() {
+    var s = session();
+    var qs = questions();
+    if (!(s.submitted && s.wrongOnly)) return qs;
+    return qs.filter(function (q) {
+      if (isChoice(q)) return verdict(q) !== 'correct';
+      return s.eval[q.id] !== 'full';
+    });
+  }
+
+  function renderList() {
+    var qs = visibleQuestions();
+    var list = document.getElementById('questionList');
+    if (!qs.length) {
+      list.innerHTML = '<div class="empty-state">太棒了，本卷没有错题。点「重新做一遍」再来一轮，或切换到其他卷继续练习。</div>';
+    } else {
+      list.innerHTML = qs.map(function (q) { return cardHTML(q); }).join('');
+    }
+    var first = list.querySelector('.qcard');
+    if (currentQid && document.getElementById('card-' + currentQid) && qs.some(function (q) { return q.id === currentQid; })) {
+      document.getElementById('card-' + currentQid).classList.add('is-current');
+    } else if (first) {
+      currentQid = first.dataset.qid;
+      first.classList.add('is-current');
+    } else {
+      currentQid = null;
+    }
+    updateProgress();
+    renderSummary();
+    renderTimer();
+  }
+
+  function renderListHead() {
+    var qs = questions();
+    var max = qs.reduce(function (a, q) { return a + q.score; }, 0);
+    var title, meta;
+    if (state.mode === 'all') {
+      title = '全部 48 题 · 混合练习';
+      meta = qs.length + ' 题 · 满分 ' + max + ' 分 · 建议用时 270 分钟（三卷合计）';
+    } else {
+      title = volName(state.vol) + (session().submitted ? '（已提交）' : '');
+      meta = qs.length + ' 题 · 满分 ' + max + ' 分 · 建议用时 90 分钟';
+    }
+    document.getElementById('listTitle').textContent = title;
+    document.getElementById('listMeta').textContent = meta;
+    document.getElementById('listEnd').textContent = '— ' + (state.mode === 'all' ? '本题库' : '本卷') + '共 ' + qs.length + ' 题' +
+      (session().submitted ? '，已提交，可查看解析与自评 —' : '，答题完毕请点「提交试卷」—');
+  }
+
+  /* ---------------- 渲染：结算 ---------------- */
+  function renderSummary() {
+    var s = session();
+    var box = document.getElementById('summary');
+    if (!s.submitted) { box.hidden = true; return; }
+    box.hidden = false;
+
+    var t = totals();
+    var pct = t.max ? (t.score / t.max) * 100 : 0;
+    document.getElementById('scoreValue').textContent = (Math.round(t.score * 100) / 100).toString();
+    document.getElementById('scoreMax').textContent = '/ ' + t.max;
+
+    var acc = t.choiceTotal ? Math.round((t.choiceCorrect / t.choiceTotal) * 1000) / 10 : 0;
+    document.getElementById('accValue').textContent = acc + '%';
+    document.getElementById('accSub').textContent = t.choiceCorrect + ' / ' + t.choiceTotal + ' 题全对';
+    document.getElementById('usedValue').textContent = clockText(s.elapsed);
+    document.getElementById('usedSub').textContent = '限时 ' + Math.round(limitOf(sessionKey()) / 60) + ' 分钟';
+    document.getElementById('calcValue').textContent = t.calcFull + ' / ' + t.calcTotal;
+    document.getElementById('doneValue').textContent = Math.round((t.done / t.total) * 100) + '%';
+    document.getElementById('doneSub').textContent = '已作答 ' + t.done + ' / ' + t.total + ' 题';
+
+    document.getElementById('summaryNote').textContent =
+      (state.mode === 'all' ? '全部 48 题混合' : volName(state.vol)) +
+      ' · 选择题自动计分，计算题按自评折算（答对 ' + 10 + ' / 部分对 5 / 未答对 0）';
+
+    document.getElementById('kpBars').innerHTML = KP_ORDER.map(function (k) {
+      var d = t.kp[k];
+      var p = d.max ? Math.round((d.got / d.max) * 100) : 0;
+      return '<div class="kp-row" data-kp="' + k + '">' +
+        '<span class="kp-name">' + esc(DATA.meta.kpLabels[k]) + '</span>' +
+        '<span class="kp-track"><span class="kp-fill" style="width:' + p + '%"></span></span>' +
+        '<span class="kp-val">' + (Math.round(d.got * 100) / 100) + ' / ' + d.max + '（' + p + '%）</span>' +
+        '</div>';
+    }).join('');
+
+    var band = bandOf(pct);
+    document.getElementById('adviceTag').textContent = band.tag;
+    document.getElementById('adviceText').textContent = band.text;
+  }
+
+  /* ---------------- 进度 / 计时 ---------------- */
+  function updateProgress() {
+    var qs = questions(), s = session();
+    var cTotal = 0, cDone = 0, kTotal = 0, kDone = 0;
+    qs.forEach(function (q) {
+      if (isChoice(q)) { cTotal++; if ((s.answers[q.id] || []).length) cDone++; }
+      else { kTotal++; if (hasText(s.answers[q.id])) kDone++; }
+    });
+    document.getElementById('progressText').textContent =
+      '选择题 ' + cDone + ' / ' + cTotal + '　·　计算题 ' + kDone + ' / ' + kTotal;
+  }
+
+  function renderTimer() {
+    var s = session();
+    var limit = limitOf(sessionKey());
+    var left = Math.max(0, limit - s.elapsed);
+    var box = document.getElementById('timerBox');
+    document.getElementById('timerValue').textContent = mmss(left);
+    box.classList.toggle('is-paused', !s.running && !s.submitted);
+    box.classList.toggle('is-critical', left <= 300 && !s.submitted);
+    var btn = document.getElementById('pauseBtn');
+    if (s.submitted) {
+      btn.textContent = '已交卷';
+      btn.disabled = true;
+    } else {
+      btn.disabled = false;
+      btn.textContent = s.running ? '暂停' : '继续';
+      btn.setAttribute('aria-pressed', String(!s.running));
+    }
+    if (s.submitted) {
+      var usedEl = document.getElementById('usedValue');
+      if (usedEl) usedEl.textContent = clockText(s.elapsed);
+    }
+  }
+
+  function tick() {
+    var s = session();
+    var limit = limitOf(sessionKey());
+    if (!s.submitted && s.running) {
+      s.elapsed++;
+      if (s.elapsed >= limit) {
+        s.elapsed = limit;
+        s.running = false;
+        submit(true);
+        return;
+      }
+      if (s.elapsed % 5 === 0) save();
+    }
+    renderTimer();
+  }
+
+  /* ---------------- 交互 ---------------- */
+  function setCurrent(qid) {
+    if (!qid) return;
+    var prev = document.querySelector('.qcard.is-current');
+    if (prev) prev.classList.remove('is-current');
+    var card = document.getElementById('card-' + qid);
+    if (card) {
+      card.classList.add('is-current');
+      currentQid = qid;
+    }
+  }
+
+  function move(delta) {
+    var qs = visibleQuestions();
+    if (!qs.length) return;
+    var idx = qs.findIndex(function (q) { return q.id === currentQid; });
+    if (idx < 0) idx = 0;
+    var next = Math.min(qs.length - 1, Math.max(0, idx + delta));
+    var q = qs[next];
+    currentQid = q.id;
+    var card = document.getElementById('card-' + q.id);
+    if (card) {
+      setCurrent(q.id);
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function chooseByIndex(optIdx) {
+    var s = session();
+    if (s.submitted) return;
+    var qs = visibleQuestions();
+    var q = qs.find(function (x) { return x.id === currentQid; });
+    if (!q || !isChoice(q)) return;
+    var opt = q.options[optIdx];
+    if (!opt) return;
+    var card = document.getElementById('card-' + q.id);
+    if (!card) return;
+    var input = card.querySelector('.opt[data-opt="' + opt.key + '"] input');
+    if (!input) return;
+    if (q.type === 'single') {
+      input.checked = true;
+    } else {
+      input.checked = !input.checked;
+    }
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+
+  function toast(msg) {
+    var el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+
+  function submit(auto) {
+    var s = session();
+    if (s.submitted) return;
+    if (!auto) {
+      var t = totals();
+      var unanswered = t.total - t.done;
+      if (unanswered > 0 && !window.confirm('还有 ' + unanswered + ' 题未作答，确定提交吗？（提交后选择题将即时判定，计算题可按自评计分）')) {
+        return;
+      }
+    }
+    s.submitted = true;
+    s.running = false;
+    s.wrongOnly = false;
+    save(); writeNow();
+    updateControls();
+    renderListHead();
+    renderList();
+    document.getElementById('summary').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    toast(auto ? '时间已到，已自动提交试卷' : '已提交：选择题已判定，计算题请自评');
+  }
+
+  function resetPaper() {
+    if (!window.confirm('确定要重新做一遍吗？本卷的作答、自评与计时将全部清空。')) return;
+    state.sessions[sessionKey()] = blankSession();
+    currentQid = null;
+    save(); writeNow();
+    updateControls();
+    renderListHead();
+    renderList();
+    document.getElementById('summary').hidden = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    toast('已清空，重新开始');
+  }
+
+  function toggleWrongOnly() {
+    var s = session();
+    if (!s.submitted) return;
+    s.wrongOnly = !s.wrongOnly;
+    document.getElementById('wrongBtn').textContent = s.wrongOnly ? '显示全部题目' : '只显示错题';
+    save();
+    renderList();
+  }
+
+  function exportTxt() {
+    var s = session();
+    var qs = questions();
+    var t = totals();
+    var lines = [];
+    var title = state.mode === 'all' ? '全部 48 题混合' : volName(state.vol);
+    lines.push('《财务管理（第5版）》第2章 财务管理基本价值观念 2.1—2.3 在线练习');
+    lines.push('卷别：' + title + '　满分：' + t.max + ' 分');
+    lines.push('导出时间：' + new Date().toLocaleString('zh-CN'));
+    lines.push('用时：' + clockText(s.elapsed) + (s.submitted ? '　状态：已提交' : '　状态：未提交'));
+    if (s.submitted) {
+      lines.push('总分：' + t.score + ' / ' + t.max +
+        '　选择题正确率：' + (t.choiceTotal ? Math.round((t.choiceCorrect / t.choiceTotal) * 100) : 0) + '%');
+    }
+    lines.push('='.repeat(60));
+
+    qs.forEach(function (q) {
+      lines.push('');
+      lines.push('第 ' + q.no + ' 题【' + typeName(q) + '｜' + q.score + ' 分｜' +
+        (q.kpLabel || DATA.meta.kpLabels[q.kp]) + '】' + (state.mode === 'all' ? '（' + volName(q.vol) + '）' : ''));
+      lines.push('题干：' + q.stem);
+      if (isChoice(q)) {
+        q.options.forEach(function (o) { lines.push('  ' + o.key + '．' + o.text); });
+        var sel = s.answers[q.id] || [];
+        lines.push('我的答案：' + (sel.length ? sel.join('') : '（未作答）'));
+        lines.push('正确答案：' + q.answer.join(''));
+        if (s.submitted) {
+          var v = verdict(q);
+          lines.push('判定：' + (v === 'correct' ? '答对 +' + q.score : v === 'partial' ? '漏选 0 分' : v === 'wrong' ? '答错 0 分' : '未作答 0 分'));
+          lines.push('解析：' + q.explanation);
+        }
+      } else {
+        q.asks.forEach(function (a) { lines.push('  ' + a.text); });
+        lines.push('我的作答：');
+        lines.push(hasText(s.answers[q.id]) ? s.answers[q.id] : '（未作答）');
+        var ev = s.eval[q.id];
+        lines.push('自评：' + (ev === 'full' ? '已答对（' + q.score + ' 分）' : ev === 'partial' ? '部分对（5 分）' : ev === 'none' ? '未答对（0 分）' : '未自评'));
+        lines.push('标准解答：');
+        q.solution.steps.forEach(function (st) {
+          if (st.title) lines.push('  ' + st.title);
+          st.lines.forEach(function (l) { lines.push('  ' + l); });
+        });
+        if (q.solution.conclusion) lines.push(q.solution.conclusion);
+        if (q.solution.pitfall) lines.push(q.solution.pitfall);
+      }
+      lines.push('-'.repeat(60));
+    });
+
+    var blob = new Blob(['\ufeff' + lines.join('\r\n')], { type: 'text/plain;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '财务管理第2章在线练习_' + (state.mode === 'all' ? '全部48题' : state.vol + '卷') + '_我的作答.txt';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 800);
+    toast('已导出作答 txt');
+  }
+
+  function applyTheme() {
+    document.documentElement.setAttribute('data-theme', state.theme);
+    document.getElementById('themeBtn').textContent = state.theme === 'dark' ? '☀️ 亮色' : '🌙 暗色';
+  }
+
+  function updateControls() {
+    var s = session();
+    document.querySelectorAll('#modeSwitch .seg-btn').forEach(function (b) {
+      var on = b.dataset.mode === state.mode;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    document.querySelectorAll('#volSwitch .seg-btn').forEach(function (b) {
+      var on = b.dataset.vol === state.vol;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', String(on));
+      b.disabled = state.mode === 'all';
+    });
+    document.getElementById('submitBtn').disabled = s.submitted;
+    document.getElementById('submitBtn').textContent = s.submitted ? '已提交' : '提交试卷';
+    document.getElementById('wrongBtn').disabled = !s.submitted;
+    document.getElementById('wrongBtn').textContent = (s.submitted && s.wrongOnly) ? '显示全部题目' : '只显示错题';
+    document.getElementById('pauseBtn').disabled = s.submitted;
+  }
+
+  function renderAll() {
+    updateControls();
+    renderListHead();
+    renderList();
+  }
+
+  function switchTo(mode, vol) {
+    state.mode = mode;
+    if (vol) state.vol = vol;
+    currentQid = null;
+    save(); writeNow();
+    renderAll();
+    document.getElementById('summary').hidden = !session().submitted;
+  }
+
+  /* ---------------- 事件绑定 ---------------- */
+  function bind() {
+    document.getElementById('modeSwitch').addEventListener('click', function (e) {
+      var b = e.target.closest('.seg-btn');
+      if (!b) return;
+      switchTo(b.dataset.mode, null);
+    });
+    document.getElementById('volSwitch').addEventListener('click', function (e) {
+      var b = e.target.closest('.seg-btn');
+      if (!b || b.disabled) return;
+      switchTo('single', b.dataset.vol);
+    });
+
+    var list = document.getElementById('questionList');
+
+    list.addEventListener('change', function (e) {
+      var input = e.target;
+      if (!input.matches || !input.matches('.opt input')) return;
+      var s = session();
+      if (s.submitted) return;
+      var card = input.closest('.qcard');
+      var qid = card.dataset.qid;
+      var q = QMAP[qid];
+      var sel = Array.prototype.slice.call(card.querySelectorAll('.opt input:checked')).map(function (i) { return i.value; });
+      sel.sort();
+      s.answers[qid] = sel;
+      card.querySelectorAll('.opt').forEach(function (lab) {
+        lab.classList.toggle('is-checked', sel.indexOf(lab.dataset.opt) >= 0);
+      });
+      setCurrent(qid);
+      updateProgress();
+      save();
+    });
+
+    list.addEventListener('input', function (e) {
+      var ta = e.target;
+      if (!ta.matches || !ta.matches('.calc-input')) return;
+      var s = session();
+      s.answers[ta.dataset.qid] = ta.value;
+      updateProgress();
+      save();
+      var flag = list.querySelector('.calc-saved[data-saved="' + ta.dataset.qid + '"]');
+      if (flag) {
+        flag.classList.add('show');
+        clearTimeout(flag._t);
+        flag._t = setTimeout(function () { flag.classList.remove('show'); }, 1400);
+      }
+    });
+
+    list.addEventListener('click', function (e) {
+      var ev = e.target.closest('.eval-btn');
+      if (ev) {
+        var card = ev.closest('.qcard');
+        var qid = card.dataset.qid;
+        var s = session();
+        var v = ev.dataset.eval;
+        s.eval[qid] = (s.eval[qid] === v) ? '' : v;
+        if (!s.eval[qid]) delete s.eval[qid];
+        card.querySelectorAll('.eval-btn').forEach(function (b) {
+          var on = b.dataset.eval === s.eval[qid];
+          b.classList.toggle('is-on', on);
+          b.setAttribute('aria-pressed', String(on));
+        });
+        var st = card.querySelector('.qstatus');
+        if (s.submitted && st) {
+          var cur = s.eval[qid];
+          st.textContent = (cur === 'full' ? '✓ 已答对' : cur === 'partial' ? '◐ 部分对' : cur === 'none' ? '✗ 未答对' : '— 未自评') + '　+' + calcEarned(QMAP[qid]) + ' 分';
+          st.className = 'qstatus ' + (cur === 'full' ? 'ok' : cur === 'partial' ? 'part' : cur === 'none' ? 'bad' : 'none');
+        }
+        renderSummary();
+        save();
+        return;
+      }
+      var opt = e.target.closest('.opt');
+      if (opt) {
+        var qcard = opt.closest('.qcard');
+        if (qcard) setCurrent(qcard.dataset.qid);
+      }
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', function () { submit(false); });
+    document.getElementById('wrongBtn').addEventListener('click', toggleWrongOnly);
+    document.getElementById('resetBtn').addEventListener('click', resetPaper);
+    document.getElementById('exportBtn').addEventListener('click', exportTxt);
+    document.getElementById('printBtn').addEventListener('click', function () { window.print(); });
+
+    document.getElementById('pauseBtn').addEventListener('click', function () {
+      var s = session();
+      if (s.submitted) return;
+      s.running = !s.running;
+      save();
+      renderTimer();
+      toast(s.running ? '计时继续' : '已暂停计时');
+    });
+
+    document.getElementById('themeBtn').addEventListener('click', function () {
+      state.theme = state.theme === 'dark' ? 'light' : 'dark';
+      applyTheme();
+      save();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var tag = (e.target.tagName || '').toLowerCase();
+      var typ = (e.target.type || '').toLowerCase();
+      var isTextField = tag === 'textarea' || tag === 'select' || e.target.isContentEditable ||
+        (tag === 'input' && ['text', 'search', 'number', 'email', 'password', 'url', 'tel'].indexOf(typ) >= 0);
+      if (isTextField) return;
+
+      if (e.key === 'ArrowLeft') { e.preventDefault(); move(-1); return; }
+      if (e.key === 'ArrowRight') { e.preventDefault(); move(1); return; }
+
+      var k = e.key.toUpperCase();
+      var idx = -1;
+      if (['1', '2', '3', '4'].indexOf(k) >= 0) idx = parseInt(k, 10) - 1;
+      else if (['A', 'B', 'C', 'D'].indexOf(k) >= 0) idx = ['A', 'B', 'C', 'D'].indexOf(k);
+      if (idx < 0) return;
+      var q = visibleQuestions().find(function (x) { return x.id === currentQid; });
+      if (q && isChoice(q) && !session().submitted) {
+        e.preventDefault();
+        chooseByIndex(idx);
+      }
+    });
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) writeNow();
+    });
+    window.addEventListener('beforeunload', writeNow);
+
+    // 打印：自动展开全部「标准解答」，打印后恢复
+    var opened = [];
+    window.addEventListener('beforeprint', function () {
+      opened = [];
+      document.querySelectorAll('details.solution').forEach(function (d) {
+        if (!d.open) { d.open = true; opened.push(d); }
+      });
+    });
+    window.addEventListener('afterprint', function () {
+      opened.forEach(function (d) { d.open = false; });
+      opened = [];
+    });
+  }
+
+  /* ---------------- 启动 ---------------- */
+  load();
+  applyTheme();
+  bind();
+  renderAll();
+  setInterval(tick, 1000);
+  renderTimer();
+})();
+
+</script>
+</body>
+</html>
